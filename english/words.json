@@ -1,0 +1,2008 @@
+{
+  "version": 1,
+  "source": "Oxford 3000 · 已写故事 84 词",
+  "words": [
+    {
+      "word": "watch",
+      "core": "保持清醒、守夜（古英语 wæccan，与 wake 同源）",
+      "bridge": "看守时的警觉注视 → 值班时段 → 值班用的计时器 → 手表",
+      "story": "守夜的人要一直睁着眼盯着，所以 watch 是「警觉地、持续地看」；守夜要轮班，一段班叫 a watch，值班的人需要掌握时间，随身计时器就被叫成 watch。「值班」才是「看守」和「手表」之间的桥，不是沙漏。",
+      "cognates": [
+        "wake",
+        "watchful",
+        "watchman"
+      ],
+      "collocations": [
+        "watch out",
+        "watch over",
+        "keep watch"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "词源故事"
+      ],
+      "status": "done",
+      "phonetic": "wɑtʃ，wɔtʃ"
+    },
+    {
+      "word": "subject",
+      "core": "sub（在下面）+ iacere（扔）→ 被扔在下面",
+      "bridge": "被放在下面 → 受支配/被讨论 → 臣民、主题、主语、受试者",
+      "story": "一个东西被「扔到下面」，就是被压着、被支配的那个；后来引申为「被拿出来讨论、被研究」的那个——所以 subject 既是「臣民」，也是「主题/主语/实验对象」。",
+      "cognates": [
+        "subjective",
+        "subjection",
+        "object"
+      ],
+      "collocations": [
+        "be subject to",
+        "subject matter",
+        "change the subject"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "'sʌbdʒɪkt"
+    },
+    {
+      "word": "address",
+      "core": "ad（朝向）+ directus（直）→ 弄直、对准",
+      "bridge": "把方向对准 → 对某人讲话 → 地址（把信对准地点）→ 处理问题",
+      "story": "把话对准某个人，就是对他讲话、称呼他；把信对准某个地点，就是地址；把注意力对准一个问题，就是 address the problem（处理问题）。一个「对准」的动作，串起说话、写信、解决问题三件事。",
+      "cognates": [
+        "direct",
+        "direction",
+        "dress"
+      ],
+      "collocations": [
+        "address a problem",
+        "address sb. as",
+        "email address"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "熟词僻义"
+      ],
+      "status": "done",
+      "phonetic": "əˈdres"
+    },
+    {
+      "word": "figure",
+      "core": "fingere（捏、塑形）→ 捏出来的形状",
+      "bridge": "形状 → 图形/数字/人物/身材 → figure out（把形状理出来 = 弄明白）",
+      "story": "捏出来的东西首先是「形状」：画出来是图形，数字也是一种「形」，人形是人物，身材是 figure；把一团乱麻「理出形状」，就是 figure out——弄明白。",
+      "cognates": [
+        "figment",
+        "figurative",
+        "fiction"
+      ],
+      "collocations": [
+        "figure out",
+        "public figure",
+        "figure in"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "ˈfɪɡə"
+    },
+    {
+      "word": "account",
+      "core": "ad + computare（计算）→ 算账",
+      "bridge": "把账算清楚 → 账目 → 把事算清楚 → 解释/说明；account for = 解释/占比",
+      "story": "账要一笔笔算清楚，一件事也要「算清楚」——give an account of it 就是「给个说法」；「这笔账算在谁头上」就是 account for。账本和解释，共用同一个「算清楚」的动作。",
+      "cognates": [
+        "count",
+        "discount",
+        "accountable",
+        "accountant"
+      ],
+      "collocations": [
+        "account for",
+        "on account of",
+        "take into account",
+        "bank account"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "熟词僻义"
+      ],
+      "status": "done",
+      "phonetic": "əˈkaʊnt"
+    },
+    {
+      "word": "respect",
+      "core": "re（回、再）+ spect（看）→ 回头再看",
+      "bridge": "回头再看 → 值得再看 → 尊重",
+      "story": "respect 的字面意思是「回头再看」。一个人或一件事值得你「再看一眼」，说明它有分量——于是 respect 从「再看」变成了「看重、尊重」。你尊重一个人，本质上是你愿意多看他一眼。",
+      "cognates": [
+        "inspect",
+        "suspect",
+        "prospect",
+        "spectator"
+      ],
+      "collocations": [
+        "with respect to",
+        "respect for",
+        "in this respect"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "spect"
+      ],
+      "status": "done",
+      "phonetic": "rɪˈspekt"
+    },
+    {
+      "word": "suspect",
+      "core": "sub（下）+ spect（看）→ 从下往上看",
+      "bridge": "从下往上看 → 偷偷打量 → 怀疑",
+      "story": "suspect 原义是「从下面往上看」。你从下往上打量一个人，眼神里带着提防和不确定——这个「偷偷打量」的动作，慢慢就变成了「怀疑」。所以 suspect 既是动词「怀疑」，也是名词「嫌疑人」。",
+      "cognates": [
+        "inspect",
+        "respect",
+        "prospect",
+        "suspicion"
+      ],
+      "collocations": [
+        "suspect sb. of",
+        "prime suspect"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "spect"
+      ],
+      "status": "done",
+      "phonetic": "səˈspekt"
+    },
+    {
+      "word": "prospect",
+      "core": "pro（向前）+ spect（看）→ 向前看",
+      "bridge": "向前看 → 前景、可能性",
+      "story": "prospect 是「向前看」。站在今天往未来看，看到的那片景象就是「前景」；看到有机会，就是「可能性」。job prospects 是就业前景，prospect for oil 是勘探石油——都是「往前看，看能看见什么」。",
+      "cognates": [
+        "inspect",
+        "respect",
+        "suspect",
+        "perspective"
+      ],
+      "collocations": [
+        "job prospects",
+        "prospect for",
+        "in prospect"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "spect"
+      ],
+      "status": "done",
+      "phonetic": "ˈprɑːspekt"
+    },
+    {
+      "word": "perspective",
+      "core": "per（穿过）+ spect（看）→ 看穿",
+      "bridge": "看穿过去 → 透视法 → 看问题的角度",
+      "story": "perspective 是「看穿」：从前面一直看进去，看到物体在空间里的位置——这是绘画里的「透视法」。后来「看穿」变成了「视角」：同样一件事，站的位置不同，看到的样子就不同，这就是你的 perspective。",
+      "cognates": [
+        "respect",
+        "prospect",
+        "spectator",
+        "inspect"
+      ],
+      "collocations": [
+        "from a perspective",
+        "in perspective",
+        "put into perspective"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "spect"
+      ],
+      "status": "done"
+    },
+    {
+      "word": "expect",
+      "core": "ex（向外）+ spectare（看）→ 向外张望",
+      "bridge": "向外张望、等着看 → 期待/预料",
+      "story": "expect 是「向外张望」：你站在门口往外看，等着某个人来——这个「等着看」的动作，就是「期待、预料」。你期待一件事，本质上是你提前朝那个方向看了很久。",
+      "cognates": [
+        "spectator",
+        "respect",
+        "prospect",
+        "inspect"
+      ],
+      "collocations": [
+        "expect to do",
+        "as expected",
+        "expect sth. from sb."
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "spect"
+      ],
+      "status": "done",
+      "phonetic": "ɪkˈspekt"
+    },
+    {
+      "word": "decide",
+      "core": "de（去掉）+ caedere（切）→ 切掉",
+      "bridge": "一刀切断其他可能 → 决定",
+      "story": "decide 来自拉丁语 decidere——「切掉」。做决定的过程，就是一刀下去，把其他所有可能性切掉，只留一条路。你犹豫不决，是因为还没舍得切；你说「我决定了」，就是那一刀落下了。",
+      "cognates": [
+        "decision",
+        "decisive",
+        "precise",
+        "scissors"
+      ],
+      "collocations": [
+        "decide on",
+        "decide to do",
+        "decide against"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "隐喻"
+      ],
+      "status": "done",
+      "phonetic": "dɪˈsaɪd"
+    },
+    {
+      "word": "consider",
+      "core": "con（一起）+ sidus（星星）→ 观察星象",
+      "bridge": "看星象做判断 → 把各种因素放在一起看 → 考虑",
+      "story": "consider 的老底是「观察星象」：古人遇到大事，要抬头看星星、把星象放在一起研究，再下判断。后来不观星了，但「把各种因素放在一起仔细看」这个动作留了下来——这就是 consider。",
+      "cognates": [
+        "consideration",
+        "considerable",
+        "desire"
+      ],
+      "collocations": [
+        "consider doing",
+        "take into consideration",
+        "all things considered"
+      ],
+      "confidence": "中高",
+      "tags": [
+        "拉丁词根",
+        "词源故事"
+      ],
+      "status": "done",
+      "phonetic": "kənˈsɪdə"
+    },
+    {
+      "word": "influence",
+      "core": "in（进入）+ fluere（流）→ 流进来",
+      "bridge": "某种力量流进人身上 → 影响",
+      "story": "influence 原本是占星术的词：古人相信星星会流出一种看不见的力量，流进人身上，决定人的命运。后来「星力流入」变成了「影响」——别人说的话、做的事「流进」你心里，改变了你，这就是 influence。",
+      "cognates": [
+        "fluent",
+        "fluid",
+        "affluent",
+        "influx"
+      ],
+      "collocations": [
+        "have an influence on",
+        "under the influence of"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "词源故事"
+      ],
+      "status": "done",
+      "phonetic": "ˈɪnfluəns"
+    },
+    {
+      "word": "occur",
+      "core": "ob（朝向）+ currere（跑）→ 跑到面前",
+      "bridge": "某事跑到你面前 → 发生；想法跑到脑子里 → 想起",
+      "story": "occur 是「跑过来」：一件事突然跑到你面前，它就是「发生了」；一个念头突然跑到你脑子里，就是「你想起了它」。所以 It occurred to me that... 不是「它发生在我身上」，而是「这个念头跑到了我脑子里」。",
+      "cognates": [
+        "current",
+        "course",
+        "excursion",
+        "concur"
+      ],
+      "collocations": [
+        "it occurs to sb.",
+        "occur to",
+        "occur in"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "隐喻"
+      ],
+      "status": "done",
+      "phonetic": "əˈkɜːr"
+    },
+    {
+      "word": "current",
+      "core": "currere（跑）→ 正在跑的",
+      "bridge": "跑着的水 → 水流/电流 → 当前流通的",
+      "story": "current 是「正在跑的」：水在跑就是水流（current），电在跑就是电流，时间在跑就是「当前的」。所以 current affairs 是时事——正在发生的、还在流动的事。",
+      "cognates": [
+        "occur",
+        "course",
+        "currency",
+        "excursion"
+      ],
+      "collocations": [
+        "current situation",
+        "electric current",
+        "current affairs"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "ˈkʌrənt"
+    },
+    {
+      "word": "course",
+      "core": "currere（跑）→ 跑的路",
+      "bridge": "跑出来的路 → 过程/路线 → 课程",
+      "story": "course 是「跑的路」：水跑出来的路是河道，人跑出来的路是路线，事情跑的过程是进程；学校里安排你「跑」完的一段学习路程，就是课程（course）。",
+      "cognates": [
+        "occur",
+        "current",
+        "excursion"
+      ],
+      "collocations": [
+        "of course",
+        "in the course of",
+        "course of study"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "kɔrs"
+    },
+    {
+      "word": "provide",
+      "core": "pro（向前）+ videre（看）→ 提前看到",
+      "bridge": "提前看到 → 预先准备 → 提供",
+      "story": "provide 是「往前看」：提前看到需要，就会提前准备，所以 provide 既是「提供」，也是「预备」。provide for 是「为……提前打算」，provident 是「有远见的」——都是从「提前看」这根藤上长出来的。",
+      "cognates": [
+        "vision",
+        "visible",
+        "evident",
+        "provident"
+      ],
+      "collocations": [
+        "provide sb. with sth.",
+        "provide for",
+        "provide that"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "vid/vis"
+      ],
+      "status": "done",
+      "phonetic": "prə'vaɪd"
+    },
+    {
+      "word": "evidence",
+      "core": "e（向外）+ videre（看）→ 看得出来的东西",
+      "bridge": "能看见的 → 摆在眼前的事实 → 证据",
+      "story": "evidence 是「能看出来的东西」：一件事能被人看见、能被摆到眼前，它就是「证据」。你说「拿出证据」，本质是「拿出来让我看见」。",
+      "cognates": [
+        "evident",
+        "video",
+        "vision",
+        "visible"
+      ],
+      "collocations": [
+        "evidence for",
+        "give evidence",
+        "clear evidence"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "vid/vis"
+      ],
+      "status": "done",
+      "phonetic": "ˈevɪdəns"
+    },
+    {
+      "word": "vision",
+      "core": "videre（看）→ 看见",
+      "bridge": "看见 → 视力/视野 → 远见、愿景",
+      "story": "vision 是「看见」：眼睛看见是视力，心里看见是想象，站在未来看见方向就是「愿景」。一个有 vision 的人，不是眼睛好，是能看见别人还看不见的东西。",
+      "cognates": [
+        "visible",
+        "video",
+        "evidence",
+        "visual"
+      ],
+      "collocations": [
+        "good vision",
+        "a vision of",
+        "vision for the future"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "ˈvɪʒn"
+    },
+    {
+      "word": "prevent",
+      "core": "pre（前）+ venire（来）→ 先来一步",
+      "bridge": "先来一步挡住 → 阻止",
+      "story": "prevent 的字面意思是「先来」。你要阻止一件事，就得比它先到一步，站在它要经过的路上挡住——所以 prevent 是「阻止」。prevent a disease 就是赶在病来之前把它拦住。",
+      "cognates": [
+        "event",
+        "invent",
+        "convene",
+        "intervene"
+      ],
+      "collocations": [
+        "prevent sb. from doing",
+        "prevent the spread of"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "ven/vent"
+      ],
+      "status": "done",
+      "phonetic": "prɪˈvent"
+    },
+    {
+      "word": "invent",
+      "core": "in（进入）+ venire（来）→ 来到脑子里",
+      "bridge": "某个东西来到脑子里 → 发明",
+      "story": "invent 是「来到」：一样世界上还没有的东西，先「来到」某个人脑子里，然后才来到世界上——这就是发明。发明不是凭空造，是先把那个东西「想进来」。",
+      "cognates": [
+        "invention",
+        "event",
+        "prevent",
+        "convene"
+      ],
+      "collocations": [
+        "invent sth.",
+        "invent the wheel"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "ven/vent"
+      ],
+      "status": "done",
+      "phonetic": "ɪnˈvent"
+    },
+    {
+      "word": "event",
+      "core": "e（向外）+ venire（来）→ 出来发生的事",
+      "bridge": "来到外面发生的事 → 事件",
+      "story": "event 是「来到眼前的事」：事情从「还没发生」来到「已经发生」，就成了一个事件。所以 event 的重点不是「事」，而是「它来了」。",
+      "cognates": [
+        "invent",
+        "prevent",
+        "eventually",
+        "convene"
+      ],
+      "collocations": [
+        "in the event of",
+        "major event",
+        "event planner"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "ven/vent"
+      ],
+      "status": "done",
+      "phonetic": "ɪ'vɛnt"
+    },
+    {
+      "word": "assume",
+      "core": "ad + sumere（拿）→ 拿过来",
+      "bridge": "拿过来穿在自己身上 → 承担；拿过来当已知 → 假定",
+      "story": "assume 是「拿过来」：把责任拿过来放在自己肩上，就是「承担」；把一个说法拿过来、当成已知条件先用着，就是「假定」。assume 和 consume、resume 是同一家——都在「拿」。",
+      "cognates": [
+        "consume",
+        "resume",
+        "presume",
+        "assumption"
+      ],
+      "collocations": [
+        "assume that",
+        "assume responsibility",
+        "let us assume"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "sum"
+      ],
+      "status": "done",
+      "phonetic": "əˈsjuːm"
+    },
+    {
+      "word": "consume",
+      "core": "con（完全）+ sumere（拿）→ 全部拿走",
+      "bridge": "全部拿走 → 消耗、消费",
+      "story": "consume 是「全部拿走」：把东西一点不剩地拿走用掉，就是消耗；把时间和钱全「拿走」，就是消费。consumer 就是那个「把东西拿走用掉」的人。",
+      "cognates": [
+        "assume",
+        "resume",
+        "consumer",
+        "consumption"
+      ],
+      "collocations": [
+        "consume energy",
+        "time-consuming",
+        "consumer goods"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "sum"
+      ],
+      "status": "done",
+      "phonetic": "kənˈsjuːm"
+    },
+    {
+      "word": "produce",
+      "core": "pro（向前）+ ducere（引）→ 向前引出",
+      "bridge": "向前引出来 → 生产、产生",
+      "story": "produce 是「向前引出」：把东西从无到有引出来，就是生产；把结果引出来，就是产生。duce 是「引」，所以 introduce 是「引进来」，reduce 是「引回去」。",
+      "cognates": [
+        "reduce",
+        "introduce",
+        "conduct",
+        "product"
+      ],
+      "collocations": [
+        "produce results",
+        "produce goods",
+        "mass-produce"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "duc"
+      ],
+      "status": "done",
+      "phonetic": "prəˈduːs"
+    },
+    {
+      "word": "reduce",
+      "core": "re（回）+ ducere（引）→ 引回去",
+      "bridge": "把数量引回去 → 减少、降低",
+      "story": "reduce 是「引回去」：把已经涨上去的数量往回引，就是减少；把复杂的东西引回简单，就是简化。减的本质，是「往回拉」。",
+      "cognates": [
+        "produce",
+        "introduce",
+        "reduction",
+        "conduct"
+      ],
+      "collocations": [
+        "reduce costs",
+        "reduce to",
+        "be reduced to"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "duc"
+      ],
+      "status": "done",
+      "phonetic": "rɪˈduːs"
+    },
+    {
+      "word": "introduce",
+      "core": "intro（向内）+ ducere（引）→ 引进来",
+      "bridge": "把人/物引进来 → 介绍、引进",
+      "story": "introduce 是「引进来」：把一个人引到大家面前，就是介绍；把一样新东西引进来，就是引进。介绍的本质，是「把你领进门」。",
+      "cognates": [
+        "produce",
+        "reduce",
+        "conduct",
+        "introduction"
+      ],
+      "collocations": [
+        "introduce sb. to",
+        "introduce a policy",
+        "introduction to"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "duc"
+      ],
+      "status": "done",
+      "phonetic": "ˌɪntrəˈduːs"
+    },
+    {
+      "word": "conduct",
+      "core": "con（一起）+ ducere（引）→ 一起引导",
+      "bridge": "带着大家一起走 → 组织、实施；引导行为 → 举止",
+      "story": "conduct 是「带着大家一起引」：带着一群人完成一件事，就是组织、实施（conduct a study）；一个人带着自己走路的姿态，就是举止（conduct）。",
+      "cognates": [
+        "produce",
+        "introduce",
+        "educate",
+        "conductor"
+      ],
+      "collocations": [
+        "conduct research",
+        "conduct an orchestra",
+        "code of conduct"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "duc"
+      ],
+      "status": "done",
+      "phonetic": "kən'dʌkt"
+    },
+    {
+      "word": "educate",
+      "core": "e（向外）+ ducere（引）→ 引出",
+      "bridge": "把人的潜能引出来 → 教育",
+      "story": "educate 是「引出来」：教育不是往里灌，而是把一个人本来就有的潜能「引」出来。这个画面和「填鸭式」正好相反——老师是引路人，不是搬运工。",
+      "cognates": [
+        "education",
+        "conduct",
+        "produce",
+        "introduce"
+      ],
+      "collocations": [
+        "educate sb. about",
+        "well educated"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "duc"
+      ],
+      "status": "done",
+      "phonetic": "ˈedʒukeɪt"
+    },
+    {
+      "word": "attract",
+      "core": "ad（朝向）+ trahere（拉）→ 拉向自己",
+      "bridge": "把东西拉向自己 → 吸引",
+      "story": "attract 是「拉向自己」：磁铁把铁拉过来，是吸引；一个人把目光拉过来，也是吸引。attract 的重点是「拉」，不是「看」。",
+      "cognates": [
+        "contract",
+        "distract",
+        "extract",
+        "tractor"
+      ],
+      "collocations": [
+        "attract attention",
+        "be attracted to",
+        "attraction"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "tract"
+      ],
+      "status": "done",
+      "phonetic": "ə'trækt"
+    },
+    {
+      "word": "contract",
+      "core": "con（一起）+ trahere（拉）→ 拉到一起",
+      "bridge": "把双方拉到一起 → 合同；把体积拉紧 → 收缩",
+      "story": "contract 是「拉到一起」：把两个人拉到一起、把条件写下来，就是合同；把肌肉或体积往一起拉，就是收缩。一份合同，本质是把双方「绑在一起」。",
+      "cognates": [
+        "attract",
+        "distract",
+        "extract",
+        "tractor"
+      ],
+      "collocations": [
+        "sign a contract",
+        "contract with",
+        "contract out"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "tract"
+      ],
+      "status": "done",
+      "phonetic": "'kɑntrækt"
+    },
+    {
+      "word": "distract",
+      "core": "dis（分开）+ trahere（拉）→ 拉开",
+      "bridge": "把注意力拉开 → 分心",
+      "story": "distract 是「拉开」：你的注意力本来集中在书上，手机把它「拉开」了，就是分心。distract 不是让你不想，是把你从原来的地方拽走。",
+      "cognates": [
+        "attract",
+        "contract",
+        "extract",
+        "distraction"
+      ],
+      "collocations": [
+        "distract sb. from",
+        "get distracted"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "tract"
+      ],
+      "status": "done",
+      "phonetic": "dɪˈstrækt"
+    },
+    {
+      "word": "extract",
+      "core": "ex（向外）+ trahere（拉）→ 拉出来",
+      "bridge": "把东西拉出来 → 提取、摘录",
+      "story": "extract 是「拉出来」：把汁从水果里拉出来是榨取，把要点从文章里拉出来是摘录，把牙从嘴里拉出来是拔牙——都是「往外拉」。",
+      "cognates": [
+        "attract",
+        "contract",
+        "distract",
+        "extraction"
+      ],
+      "collocations": [
+        "extract from",
+        "extract information",
+        "vanilla extract"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "tract"
+      ],
+      "status": "done",
+      "phonetic": "ˈekstrækt"
+    },
+    {
+      "word": "project",
+      "core": "pro（向前）+ iacere（扔）→ 向前扔",
+      "bridge": "把东西向前扔 → 投射/规划；扔出去要做的事 → 项目",
+      "story": "project 是「向前扔」：把影子扔到墙上，是投影；把计划扔到未来，是规划；把一件要完成的事扔到前面，就是一个项目。项目，就是你「扔到未来」的任务。",
+      "cognates": [
+        "reject",
+        "object",
+        "subject",
+        "projection"
+      ],
+      "collocations": [
+        "project plan",
+        "project onto",
+        "research project"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "ject"
+      ],
+      "status": "done",
+      "phonetic": "ˈprɑːdʒekt"
+    },
+    {
+      "word": "reject",
+      "core": "re（回）+ iacere（扔）→ 扔回去",
+      "bridge": "把东西扔回去 → 拒绝",
+      "story": "reject 是「扔回去」：别人递过来的东西，你原样扔回去，就是拒绝。拒绝的本质，是「我不接，退给你」。",
+      "cognates": [
+        "project",
+        "object",
+        "subject",
+        "rejection"
+      ],
+      "collocations": [
+        "reject a proposal",
+        "reject an offer",
+        "be rejected"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "ject"
+      ],
+      "status": "done",
+      "phonetic": "rɪˈdʒekt"
+    },
+    {
+      "word": "object",
+      "core": "ob（对面）+ iacere（扔）→ 扔到对面",
+      "bridge": "扔到对面的东西 → 对象/物体；把反对扔到对面 → 反对",
+      "story": "object 是「扔到对面」：扔到你面前、被你看着的那个东西，就是「物体/对象」；把「不」扔到对面去，就是「反对」。所以 object 既是你面对的东西，也是你扔出去的反对。",
+      "cognates": [
+        "subject",
+        "project",
+        "reject",
+        "objective"
+      ],
+      "collocations": [
+        "object to",
+        "object of study",
+        "everyday objects"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "ject"
+      ],
+      "status": "done",
+      "phonetic": "ˈɑːbdʒekt"
+    },
+    {
+      "word": "support",
+      "core": "sub（下面）+ portare（搬）→ 从下面托着",
+      "bridge": "在下面托住 → 支撑、支持",
+      "story": "support 是「从下面搬着」：柱子从下面托住屋顶，是支撑；朋友从下面托住你，是支持。真正的支持，永远来自「下面那只手」。",
+      "cognates": [
+        "transport",
+        "import",
+        "export",
+        "portable"
+      ],
+      "collocations": [
+        "support sb.",
+        "support for",
+        "financial support"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "port"
+      ],
+      "status": "done",
+      "phonetic": "səˈpɔːrt"
+    },
+    {
+      "word": "transport",
+      "core": "trans（穿过）+ portare（搬）→ 搬到对面",
+      "bridge": "把人和物搬到另一边 → 运输",
+      "story": "transport 是「搬过去」：把人从 A 搬到 B，把货从港口搬到仓库，都是 transport。transport 的重点是「搬」，不是「运」这个抽象词。",
+      "cognates": [
+        "support",
+        "import",
+        "export",
+        "portable"
+      ],
+      "collocations": [
+        "public transport",
+        "transport goods",
+        "means of transport"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "port"
+      ],
+      "status": "done",
+      "phonetic": "ˈtrænspɔːrt"
+    },
+    {
+      "word": "import",
+      "core": "im（进入）+ portare（搬）→ 搬进来",
+      "bridge": "把货物搬进国内 → 进口",
+      "story": "import 是「搬进来」：把外国的东西搬进自己的国家，就是进口；把数据搬进程序，就是导入。方向永远朝「里」。",
+      "cognates": [
+        "export",
+        "transport",
+        "support",
+        "portable"
+      ],
+      "collocations": [
+        "import goods",
+        "import from",
+        "import data"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "port"
+      ],
+      "status": "done",
+      "phonetic": "'ɪmpɔt"
+    },
+    {
+      "word": "export",
+      "core": "ex（向外）+ portare（搬）→ 搬出去",
+      "bridge": "把货物搬出国 → 出口",
+      "story": "export 是「搬出去」：把本国的东西搬到国外，就是出口；把数据搬出去，就是导出。和 import 正好一进一出。",
+      "cognates": [
+        "import",
+        "transport",
+        "support",
+        "portable"
+      ],
+      "collocations": [
+        "export goods",
+        "export to",
+        "export data"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "port"
+      ],
+      "status": "done",
+      "phonetic": "ˈekspɔːrt；ɪkˈ-"
+    },
+    {
+      "word": "contain",
+      "core": "con（一起）+ tenere（握）→ 握在一起",
+      "bridge": "把东西握在里面 → 包含、容纳",
+      "story": "contain 是「握在一起」：一个盒子把东西握在怀里，就是容纳；一篇文章把要点握在手里，就是包含。contain 的画面是「一只手攥着」。",
+      "cognates": [
+        "maintain",
+        "obtain",
+        "retain",
+        "container"
+      ],
+      "collocations": [
+        "contain sth.",
+        "contain information",
+        "container"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "tain"
+      ],
+      "status": "done",
+      "phonetic": "kən'ten"
+    },
+    {
+      "word": "maintain",
+      "core": "manu（手）+ tenere（握）→ 用手握住",
+      "bridge": "一直握在手里 → 维持、保养",
+      "story": "maintain 是「用手握住」：一样东西你要一直握在手里不让它掉，就是维持；房子要一直修修补补保持住，就是保养。maintain 的核心是「别松手」。",
+      "cognates": [
+        "contain",
+        "obtain",
+        "retain",
+        "maintenance"
+      ],
+      "collocations": [
+        "maintain order",
+        "maintain a balance",
+        "maintain contact"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "tain"
+      ],
+      "status": "done",
+      "phonetic": "meɪnˈteɪn"
+    },
+    {
+      "word": "obtain",
+      "core": "ob（朝向）+ tenere（握）→ 伸手握住",
+      "bridge": "伸手把它握住 → 获得",
+      "story": "obtain 是「朝它伸手、握住」：你想要的东西在面前，你伸手把它握住，就是获得。obtain 比 get 更正式，因为它保留了「握住」的画面。",
+      "cognates": [
+        "contain",
+        "maintain",
+        "retain",
+        "obtainable"
+      ],
+      "collocations": [
+        "obtain permission",
+        "obtain information",
+        "obtain a degree"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "tain"
+      ],
+      "status": "done",
+      "phonetic": "əbˈteɪn"
+    },
+    {
+      "word": "retain",
+      "core": "re（回）+ tenere（握）→ 握回来",
+      "bridge": "握住不放 → 保留、记住",
+      "story": "retain 是「握回来、握住不放」：把东西留住是保留，把知识留在脑子里是记住。retain 和 contain、maintain 是一家人，关键动作都是「握」。",
+      "cognates": [
+        "contain",
+        "maintain",
+        "obtain",
+        "retention"
+      ],
+      "collocations": [
+        "retain control",
+        "retain information",
+        "retain staff"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "tain"
+      ],
+      "status": "done",
+      "phonetic": "rɪˈteɪn"
+    },
+    {
+      "word": "describe",
+      "core": "de（向下）+ scribere（写）→ 写下来",
+      "bridge": "把看到的东西写下来 → 描述",
+      "story": "describe 是「写下来」：你看到一个人、一件事，把它一笔一笔写下来，就是描述。描述的本质，是「让没看见的人也能看见」。",
+      "cognates": [
+        "description",
+        "prescribe",
+        "subscribe",
+        "script"
+      ],
+      "collocations": [
+        "describe sth. as",
+        "describe in detail",
+        "description"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "scrib"
+      ],
+      "status": "done",
+      "phonetic": "dɪˈskraɪb"
+    },
+    {
+      "word": "predict",
+      "core": "pre（前）+ dicere（说）→ 提前说",
+      "bridge": "事情发生前先说出来 → 预测",
+      "story": "predict 是「提前说」：事情还没发生，你先把它说出来，就是预测。预测准不准，看的是你「提前说」的底气。",
+      "cognates": [
+        "prediction",
+        "dictionary",
+        "contradict",
+        "dictate"
+      ],
+      "collocations": [
+        "predict sth.",
+        "predict that",
+        "predictable"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "dict"
+      ],
+      "status": "done",
+      "phonetic": "prɪˈdɪkt"
+    },
+    {
+      "word": "transform",
+      "core": "trans（穿过）+ formare（成形）→ 换个形状",
+      "bridge": "从一种形状变成另一种 → 转变",
+      "story": "transform 是「换形状」：毛毛虫变成蝴蝶，是形状彻底换了；一个行业被技术改变，也是 transform。transform 比 change 更狠——它连「形」都换了。",
+      "cognates": [
+        "form",
+        "inform",
+        "uniform",
+        "formation"
+      ],
+      "collocations": [
+        "transform into",
+        "transform sth.",
+        "transformation"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "form"
+      ],
+      "status": "done",
+      "phonetic": "trænsˈfɔːrm"
+    },
+    {
+      "word": "inform",
+      "core": "in（进入）+ formare（成形）→ 把形状放进脑子",
+      "bridge": "把信息放进别人脑子里 → 通知",
+      "story": "inform 是「把形状放进脑子里」：你把一件事的「形状」讲清楚，让它进入对方脑子，就是通知、告知。information 就是那个被放进脑子的「形状」。",
+      "cognates": [
+        "form",
+        "transform",
+        "uniform",
+        "information"
+      ],
+      "collocations": [
+        "inform sb. of",
+        "keep sb. informed",
+        "information"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "form"
+      ],
+      "status": "done",
+      "phonetic": "ɪnˈfɔːm"
+    },
+    {
+      "word": "construct",
+      "core": "con（一起）+ struere（堆）→ 堆到一起",
+      "bridge": "把材料堆起来 → 建造、构造",
+      "story": "construct 是「堆到一起」：砖一块块堆起来是建房子，论据一条条堆起来是构造论证。construct 的画面是「一层层往上码」。",
+      "cognates": [
+        "structure",
+        "instruct",
+        "construction",
+        "destruct"
+      ],
+      "collocations": [
+        "construct a building",
+        "construct an argument",
+        "construction"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "struct"
+      ],
+      "status": "done",
+      "phonetic": "kən'strʌkt"
+    },
+    {
+      "word": "structure",
+      "core": "struere（堆）→ 堆出来的东西",
+      "bridge": "堆出来的框架 → 结构",
+      "story": "structure 是「堆出来的东西」：把材料按一定方式堆好，形成的那个框架就是结构。房子有结构，文章有结构，社会也有结构——都是「怎么堆」。",
+      "cognates": [
+        "construct",
+        "instruct",
+        "structural",
+        "infrastructure"
+      ],
+      "collocations": [
+        "social structure",
+        "structure of",
+        "structural"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "struct"
+      ],
+      "status": "done",
+      "phonetic": "ˈstrʌktʃər"
+    },
+    {
+      "word": "instruct",
+      "core": "in（进入）+ struere（堆）→ 在脑子里堆起来",
+      "bridge": "把知识堆进学生脑子 → 教导、指示",
+      "story": "instruct 是「往脑子里堆」：老师把知识一层层堆进学生脑子里，就是教导；把步骤一条条堆给你，就是指示。instruction 就是那堆「步骤」。",
+      "cognates": [
+        "construct",
+        "structure",
+        "instruction",
+        "instructor"
+      ],
+      "collocations": [
+        "instruct sb. to do",
+        "follow instructions",
+        "instruction manual"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "struct"
+      ],
+      "status": "done",
+      "phonetic": "ɪnˈstrʌkt"
+    },
+    {
+      "word": "accept",
+      "core": "ad（朝向）+ capere（拿）→ 拿过来",
+      "bridge": "把别人递来的东西拿过来 → 接受",
+      "story": "accept 是「拿过来」：别人递给你一份礼物、一个说法、一个邀请，你伸手拿过来，就是接受。拒绝是扔回去（reject），接受是拿过来。",
+      "cognates": [
+        "receive",
+        "concept",
+        "except",
+        "acceptable"
+      ],
+      "collocations": [
+        "accept an offer",
+        "accept responsibility",
+        "widely accepted"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "cap"
+      ],
+      "status": "done",
+      "phonetic": "əkˈsept"
+    },
+    {
+      "word": "admit",
+      "core": "ad（朝向）+ mittere（送）→ 送进去",
+      "bridge": "把人/事送进门 → 准许进入；把真相送出去 → 承认",
+      "story": "admit 是「送进去」：把人送进门口，就是准许进入；把一直藏着的事实「送」出来，就是承认。承认错误，本质是把那件事从心里放出来。",
+      "cognates": [
+        "permit",
+        "submit",
+        "commit",
+        "admission"
+      ],
+      "collocations": [
+        "admit to",
+        "admit doing",
+        "be admitted to"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "mit"
+      ],
+      "status": "done",
+      "phonetic": "ədˈmɪt"
+    },
+    {
+      "word": "permit",
+      "core": "per（穿过）+ mittere（送）→ 让通过",
+      "bridge": "让东西通过 → 允许",
+      "story": "permit 是「让通过」：门卫让你通过，就是允许；规则让这件事通过，就是许可。permit 的核心是「放行」。",
+      "cognates": [
+        "admit",
+        "submit",
+        "commit",
+        "permission"
+      ],
+      "collocations": [
+        "permit sb. to do",
+        "weather permitting",
+        "work permit"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "mit"
+      ],
+      "status": "done",
+      "phonetic": "pərˈmɪt"
+    },
+    {
+      "word": "submit",
+      "core": "sub（下面）+ mittere（送）→ 送到下面",
+      "bridge": "把东西送到上级手里 → 提交；把自己放到下面 → 屈服",
+      "story": "submit 是「往下送」：把作业送到老师手里，是提交；把自己放到别人下面，是屈服。同一个「往下送」，送东西是提交，送自己是服从。",
+      "cognates": [
+        "admit",
+        "permit",
+        "commit",
+        "submission"
+      ],
+      "collocations": [
+        "submit an application",
+        "submit to",
+        "submission"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "mit"
+      ],
+      "status": "done"
+    },
+    {
+      "word": "transfer",
+      "core": "trans（穿过）+ ferre（搬）→ 搬到另一边",
+      "bridge": "把人/物/权搬到别处 → 转移",
+      "story": "transfer 是「搬过去」：从这趟车搬到那趟车，是换乘；从这家公司搬到那家公司，是调动；把钱从这张卡搬到那张卡，是转账。都是「搬」。",
+      "cognates": [
+        "prefer",
+        "offer",
+        "differ",
+        "reference"
+      ],
+      "collocations": [
+        "transfer money",
+        "transfer to",
+        "transferable"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "fer"
+      ],
+      "status": "done",
+      "phonetic": "trænsˈfɜːr"
+    },
+    {
+      "word": "prefer",
+      "core": "pre（前）+ ferre（拿）→ 拿到前面",
+      "bridge": "把喜欢的东西拿到前面 → 更喜欢",
+      "story": "prefer 是「拿到前面」：几个选项摆着，你把其中一个拿到自己面前，就是更喜欢它。偏好，就是你把它「提前」了。",
+      "cognates": [
+        "transfer",
+        "offer",
+        "differ",
+        "preference"
+      ],
+      "collocations": [
+        "prefer A to B",
+        "prefer to do",
+        "preference"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "fer"
+      ],
+      "status": "done",
+      "phonetic": "prɪˈfɜːr"
+    },
+    {
+      "word": "offer",
+      "core": "ob（朝向）+ ferre（拿）→ 拿到面前",
+      "bridge": "把东西拿到别人面前 → 提供、提议",
+      "story": "offer 是「拿到面前」：你把东西拿到别人面前，问他要不要，就是提供；你把一个方案拿到桌上，就是提议。offer 的画面是「伸手递过去」。",
+      "cognates": [
+        "prefer",
+        "transfer",
+        "differ",
+        "offering"
+      ],
+      "collocations": [
+        "offer to do",
+        "offer sb. sth.",
+        "job offer"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "fer"
+      ],
+      "status": "done",
+      "phonetic": "ˈɔːfər"
+    },
+    {
+      "word": "differ",
+      "core": "dis（分开）+ ferre（拿）→ 分开拿",
+      "bridge": "各拿各的、往不同方向 → 不同",
+      "story": "differ 是「分开拿」：两个人从同一个起点出发，往不同方向拿东西，就走出了不同的路——这就是「不同」。difference 就是那条分开的缝。",
+      "cognates": [
+        "different",
+        "prefer",
+        "transfer",
+        "difference"
+      ],
+      "collocations": [
+        "differ from",
+        "differ in",
+        "make a difference"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "fer"
+      ],
+      "status": "done",
+      "phonetic": "ˈdɪfər"
+    },
+    {
+      "word": "survive",
+      "core": "super（超过）+ vivere（活）→ 活得超过",
+      "bridge": "活得比灾难/别人更久 → 幸存",
+      "story": "survive 是「活过头」：一场灾难过去了，你还活着，就是「活得超过了它」；一个人去世了，他的思想还在，也是 survive。survive 的核心是「比那个东西活得久」。",
+      "cognates": [
+        "revive",
+        "vital",
+        "vitamin",
+        "survival"
+      ],
+      "collocations": [
+        "survive an accident",
+        "survive on",
+        "survival"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "viv"
+      ],
+      "status": "done",
+      "phonetic": "sərˈvaɪv"
+    },
+    {
+      "word": "obvious",
+      "core": "ob（在路上）+ via（路）→ 挡在路上",
+      "bridge": "挡在路中间、一眼就看见 → 明显的",
+      "story": "obvious 是「挡在路上」：一样东西就横在你必经的路上，你不可能看不见——所以 obvious 是「明显的」。明显，不是因为它大，而是因为它「就在你眼前」。",
+      "cognates": [
+        "previous",
+        "via",
+        "obviously",
+        "trivial"
+      ],
+      "collocations": [
+        "it is obvious that",
+        "for obvious reasons",
+        "obvious choice"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "via"
+      ],
+      "status": "done",
+      "phonetic": "ˈɑːbviəs"
+    },
+    {
+      "word": "previous",
+      "core": "pre（前）+ via（路）→ 走在前面",
+      "bridge": "走在前面那段路 → 先前的",
+      "story": "previous 是「走在前面的路」：你现在走的路之前那一段，就是「先前的」。previous experience 是你走到今天之前走过的路。",
+      "cognates": [
+        "obvious",
+        "via",
+        "previously",
+        "trivial"
+      ],
+      "collocations": [
+        "previous experience",
+        "the previous day",
+        "previously"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "via"
+      ],
+      "status": "done",
+      "phonetic": "ˈpriːviəs"
+    },
+    {
+      "word": "point",
+      "core": "punctum（刺出的小点）",
+      "bridge": "刺出来的一个小点 → 点/要点/分数",
+      "story": "point 来自拉丁语 punctum——「刺出来的小点」。针尖扎一下留下一个点，所以 point 是「点」；一篇文章最尖的那个点，是「要点」；比赛记分是一个个点，是「分数」。point 就是「最尖的那一下」。",
+      "cognates": [
+        "punctual",
+        "puncture",
+        "punctum",
+        "appoint"
+      ],
+      "collocations": [
+        "point out",
+        "to the point",
+        "point of view"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "pɔɪnt"
+    },
+    {
+      "word": "order",
+      "core": "ordo（一排、行列）",
+      "bridge": "排成一排 → 顺序；按顺序下的指令 → 命令；点单 → 订单",
+      "story": "order 来自拉丁语 ordo——「排成一排」。东西排整齐就是「顺序」；按顺序发下去的指令就是「命令」；你在菜单上按顺序点一样东西，就是「订单」。order 的世界里，一切都要「排好」。",
+      "cognates": [
+        "ordinary",
+        "organize",
+        "orderly",
+        "coordinate"
+      ],
+      "collocations": [
+        "in order to",
+        "out of order",
+        "place an order"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "ˈɔːrdər"
+    },
+    {
+      "word": "right",
+      "core": "rectus（直的、正的）",
+      "bridge": "直的正的 → 正确；右手边 → 右边；正当的 → 权利",
+      "story": "right 来自拉丁语 rectus——「直的、正的」。一条不弯的路是「正」的，所以 right 是「正确」；人站直时右手在「正」的一侧，所以是「右边」；一件事在道理上「正」，所以你拥有「权利」。right 的三个意思，都是「正」。",
+      "cognates": [
+        "correct",
+        "direct",
+        "rectangle",
+        "rectify"
+      ],
+      "collocations": [
+        "right away",
+        "all right",
+        "human rights"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "熟词僻义"
+      ],
+      "status": "done",
+      "phonetic": "raɪt"
+    },
+    {
+      "word": "state",
+      "core": "stare（站立）→ 站着的样子",
+      "bridge": "站着的样子 → 状态；立在那里的整体 → 国家",
+      "story": "state 来自拉丁语 stare——「站立」。一个人站着的样子，是他的「状态」；一个民族立在那里、作为一个整体，就是「国家」。state 既是「你现在站成什么样」，也是「你们站成的那个整体」。",
+      "cognates": [
+        "station",
+        "status",
+        "statue",
+        "stable"
+      ],
+      "collocations": [
+        "state of mind",
+        "state that",
+        "the United States"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "steɪt"
+    },
+    {
+      "word": "matter",
+      "core": "materia（材料、木料）",
+      "bridge": "构成东西的材料 → 物质；正在处理的那块材料 → 事情",
+      "story": "matter 来自拉丁语 materia——「材料、木料」。构成世界的东西是「物质」；你手上正在处理的那块「材料」，就是一件「事情」。所以 What's the matter? 问的是「你手上这块材料怎么了」。",
+      "cognates": [
+        "material",
+        "maternal",
+        "matrix",
+        "materialize"
+      ],
+      "collocations": [
+        "no matter",
+        "as a matter of fact",
+        "subject matter"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "ˈmætər"
+    },
+    {
+      "word": "issue",
+      "core": "ex（向外）+ ire（走）→ 走出去",
+      "bridge": "从里面走出去 → 发出、发行；冒出来的问题 → 议题",
+      "story": "issue 是「走出去」：杂志从印刷厂走出去，是「发行」；一个矛盾从系统里冒出来，就是「问题、议题」。issue 不是静态的「问题」，而是「冒出来的那件事」。",
+      "cognates": [
+        "exit",
+        "initial",
+        "itinerary",
+        "transit"
+      ],
+      "collocations": [
+        "issue with",
+        "raise an issue",
+        "issue a statement"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "熟词僻义"
+      ],
+      "status": "done",
+      "phonetic": "ˈɪʃuː"
+    },
+    {
+      "word": "term",
+      "core": "terminus（边界、终点）",
+      "bridge": "划出的边界 → 期限；边界内约定好的说法 → 术语；双方划定的条件 → 条款",
+      "story": "term 来自拉丁语 terminus——「边界、终点」。一段时间有边界，就是「期限」；一个领域里有边界的说法，就是「术语」；两个人把条件划清楚，就是「条款」。term 的一切，都从「划界」开始。",
+      "cognates": [
+        "terminal",
+        "terminate",
+        "determine",
+        "exterminate"
+      ],
+      "collocations": [
+        "in terms of",
+        "long-term",
+        "terms and conditions"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "拉丁词根"
+      ],
+      "status": "done",
+      "phonetic": "tɜːrm"
+    },
+    {
+      "word": "visible",
+      "core": "videre（看）+ -ibilis（能…的）→ 能被看见的",
+      "bridge": "能被看见 → 可见的",
+      "story": "visible 是「能被看见的」：一件事摆在那里，你的眼睛能接住它，它就是 visible。看不见的东西不是不存在，只是还没进入「能被看见」的范围。",
+      "cognates": [
+        "vision",
+        "visual",
+        "evidence",
+        "video"
+      ],
+      "collocations": [
+        "visible to",
+        "clearly visible",
+        "visible light"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "vid/vis"
+      ],
+      "status": "done",
+      "phonetic": "ˈvɪzəbl"
+    },
+    {
+      "word": "visual",
+      "core": "visus（看）→ 视觉的",
+      "bridge": "与「看」有关 → 视觉的",
+      "story": "visual 是「看」的形容词：用眼睛接收的画面是 visual，图表是 visual aid，视觉艺术是 visual art。和 vision（看见/愿景）同一条根。",
+      "cognates": [
+        "vision",
+        "visible",
+        "video",
+        "visualize"
+      ],
+      "collocations": [
+        "visual effects",
+        "visual aid",
+        "visual art"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "vid/vis"
+      ],
+      "status": "done"
+    },
+    {
+      "word": "receive",
+      "core": "re（回）+ capere（拿）→ 拿回来",
+      "bridge": "把别人送来的东西拿回来 → 收到",
+      "story": "receive 是「拿回来」：别人递过来、寄过来的东西，你把它接到自己手里，就是收到。receive 的重点不是「给」，而是「接住」。",
+      "cognates": [
+        "accept",
+        "concept",
+        "except",
+        "receipt"
+      ],
+      "collocations": [
+        "receive sth. from",
+        "receive an award",
+        "receiver"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "cap"
+      ],
+      "status": "done",
+      "phonetic": "rɪ'siv"
+    },
+    {
+      "word": "except",
+      "core": "ex（向外）+ capere（拿）→ 拿出去",
+      "bridge": "把某物拿出去 → 除外",
+      "story": "except 是「拿出去」：把一样东西从整体里拿出去、不算它，就是「除…之外」。Everyone except Tom——把 Tom 拿出去，剩下的才是 everyone。",
+      "cognates": [
+        "accept",
+        "receive",
+        "concept",
+        "exception"
+      ],
+      "collocations": [
+        "except for",
+        "except that",
+        "with the exception of"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "cap"
+      ],
+      "status": "done",
+      "phonetic": "ɪk'sɛpt"
+    },
+    {
+      "word": "concept",
+      "core": "con（一起）+ capere（拿）→ 拿在一起",
+      "bridge": "把特征抓到一起 → 概念",
+      "story": "concept 是「把东西抓在一起」：你看到很多只猫，把「会喵、有毛、四条腿」这些特征抓到一起，形成的就是「猫」这个概念。概念，就是抓在一起的那把特征。",
+      "cognates": [
+        "conception",
+        "conceptual",
+        "accept",
+        "receive"
+      ],
+      "collocations": [
+        "basic concept",
+        "concept of",
+        "conceptual"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "cap"
+      ],
+      "status": "done",
+      "phonetic": "ˈkɒnsept"
+    },
+    {
+      "word": "important",
+      "core": "in（进入）+ portare（搬）→ 搬进来",
+      "bridge": "有分量、值得搬进来 → 重要的",
+      "story": "important 是「有分量、值得搬进来」：一件事重要，是因为它「有重量」，值得你把它搬进自己的考虑范围。不重要的东西，你连搬都懒得搬。",
+      "cognates": [
+        "import",
+        "export",
+        "transport",
+        "support"
+      ],
+      "collocations": [
+        "important to",
+        "it is important that",
+        "importance"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "port"
+      ],
+      "status": "done",
+      "phonetic": "ɪmˈpɔːtnt"
+    },
+    {
+      "word": "report",
+      "core": "re（回）+ portare（搬）→ 搬回来",
+      "bridge": "把消息搬回来 → 报告",
+      "story": "report 是「搬回来」：你派出去的人把看到的事「搬」回来给你，就是报告；记者把现场搬回来，就是报道。报告的本质，是「把远处的事搬到你面前」。",
+      "cognates": [
+        "import",
+        "export",
+        "transport",
+        "reporter"
+      ],
+      "collocations": [
+        "report on",
+        "report to",
+        "news report"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "port"
+      ],
+      "status": "done",
+      "phonetic": "rɪ'pɔrt"
+    },
+    {
+      "word": "apply",
+      "core": "ad（朝向）+ plicare（折）→ 折向、贴上",
+      "bridge": "把东西贴上去 → 应用；把自己贴上去 → 申请",
+      "story": "apply 是「折向、贴上」：把一条规则贴到具体事情上，是「应用」；把自己贴到一份工作上，是「申请」；把药膏贴到皮肤上，是「涂抹」。都是「贴上去」。",
+      "cognates": [
+        "imply",
+        "reply",
+        "complex",
+        "application"
+      ],
+      "collocations": [
+        "apply for",
+        "apply to",
+        "apply sth. to"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "plic"
+      ],
+      "status": "done",
+      "phonetic": "əˈplaɪ"
+    },
+    {
+      "word": "imply",
+      "core": "in（向内）+ plicare（折）→ 折进去",
+      "bridge": "话里有话、折在里面 → 暗示",
+      "story": "imply 是「折进去」：一句话表面说了一层，里面还折着一层没说出口的意思，就是「暗示」。你听懂 imply，等于把折进去的那层展开。",
+      "cognates": [
+        "apply",
+        "reply",
+        "complex",
+        "implication"
+      ],
+      "collocations": [
+        "imply that",
+        "imply sth.",
+        "implication"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "plic"
+      ],
+      "status": "done",
+      "phonetic": "ɪmˈplaɪ"
+    },
+    {
+      "word": "reply",
+      "core": "re（回）+ plicare（折）→ 折回去",
+      "bridge": "把话折回去 → 回复",
+      "story": "reply 是「折回去」：别人把话递过来，你把这层话折回去，就是回复。reply 和 apply、imply 是同一家，动作都是「折」。",
+      "cognates": [
+        "apply",
+        "imply",
+        "complex",
+        "replica"
+      ],
+      "collocations": [
+        "reply to",
+        "in reply",
+        "reply immediately"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "plic"
+      ],
+      "status": "done",
+      "phonetic": "rɪ'plai"
+    },
+    {
+      "word": "complex",
+      "core": "com（一起）+ plectere（编）→ 编在一起",
+      "bridge": "很多东西编在一起 → 复杂的；编成的整体 → 综合体",
+      "story": "complex 是「编在一起」：线越多、编得越紧，就越「复杂」；很多功能编在一栋楼里，就是「综合体」。复杂不是东西多，是「缠在一起」。",
+      "cognates": [
+        "apply",
+        "imply",
+        "reply",
+        "complexity"
+      ],
+      "collocations": [
+        "complex problem",
+        "complex system",
+        "shopping complex"
+      ],
+      "confidence": "高",
+      "tags": [
+        "多义词",
+        "plic"
+      ],
+      "status": "done",
+      "phonetic": "ˈkɑmplɛks;kəmˈplɛks"
+    },
+    {
+      "word": "explain",
+      "core": "ex（向外）+ planare（摊平）→ 摊开",
+      "bridge": "把揉成一团的事摊平 → 解释",
+      "story": "explain 是「摊平」：一件事在你脑子里揉成一团，你把它一层层摊开、铺平给人看，就是解释。解释得好，等于把褶皱都抹平。",
+      "cognates": [
+        "plain",
+        "explanation",
+        "explicit",
+        "complain"
+      ],
+      "collocations": [
+        "explain sth. to sb.",
+        "explain why",
+        "explanation"
+      ],
+      "confidence": "高",
+      "tags": [
+        "词源故事",
+        "plan"
+      ],
+      "status": "done",
+      "phonetic": "ɪk'splen"
+    },
+    {
+      "word": "compare",
+      "core": "com（一起）+ par（相等）→ 放在一起看是否相等",
+      "bridge": "把两样东西放一起 → 比较",
+      "story": "compare 是「放在一起，看是否相等」：把两样东西并排摆好，量一量差在哪、同在哪，就是比较。compare 的前提是「摆在一起」。",
+      "cognates": [
+        "comparison",
+        "comparable",
+        "pair",
+        "peer"
+      ],
+      "collocations": [
+        "compare A with B",
+        "compared to",
+        "comparison"
+      ],
+      "confidence": "高",
+      "tags": [
+        "拉丁词根",
+        "par"
+      ],
+      "status": "done",
+      "phonetic": "kəmˈpeə"
+    },
+    {
+      "word": "separate",
+      "core": "se（分开）+ parare（准备/安排）→ 分开安排",
+      "bridge": "把东西分开摆 → 分离",
+      "story": "separate 是「分开摆」：本来放在一起的东西，你把它们各自摆到一边，就是分开。separate 和 prepare 同根，一个「分开准备」，一个「提前准备」。",
+      "cognates": [
+        "prepare",
+        "compare",
+        "separation",
+        "several"
+      ],
+      "collocations": [
+        "separate from",
+        "separate into",
+        "separately"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "par"
+      ],
+      "status": "done",
+      "phonetic": "ˈseprət"
+    },
+    {
+      "word": "prepare",
+      "core": "pre（前）+ parare（准备）→ 提前安排",
+      "bridge": "提前摆好 → 准备",
+      "story": "prepare 是「提前摆好」：事情还没来，你先把要用的东西摆到位，就是准备。准备的本质，是「提前把未来的场面摆出来」。",
+      "cognates": [
+        "separate",
+        "compare",
+        "preparation",
+        "repair"
+      ],
+      "collocations": [
+        "prepare for",
+        "be prepared to",
+        "preparation"
+      ],
+      "confidence": "高",
+      "tags": [
+        "同根词族",
+        "par"
+      ],
+      "status": "done",
+      "phonetic": "prɪˈper"
+    }
+  ]
+}
