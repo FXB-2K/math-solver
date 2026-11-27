@@ -1,0 +1,102 @@
+/* 专业数学输入（MathLive）样式 */
+.ms-inmode-switch {
+  display: flex;
+  gap: 0;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid var(--v-border);
+  background: var(--v-soft);
+  margin-bottom: 10px;
+  width: fit-content;
+}
+.ms-inmode-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--v-muted);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .16s;
+}
+.ms-inmode-switch button.on {
+  background: var(--v-surface);
+  color: var(--v-brand);
+  box-shadow: 0 1px 3px rgba(16, 24, 40, .08);
+}
+
+.ms-mathwrap { margin-bottom: 10px; }
+
+math-field.ms-mathfield {
+  display: block;
+  width: 100%;
+  min-height: 96px;
+  font-size: 20px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--v-border);
+  background: var(--v-surface);
+  color: var(--v-ink);
+  outline: none;
+  box-sizing: border-box;
+  --caret-color: var(--v-brand);
+  --selection-background-color: var(--v-focus);
+  --contains-highlight-background-color: transparent;
+  --highlight-text: var(--v-brand);
+}
+math-field.ms-mathfield:focus-within,
+math-field.ms-mathfield:focus {
+  border-color: var(--v-via);
+  box-shadow: 0 0 0 3px var(--v-focus);
+}
+math-field.ms-mathfield::part(menu-toggle) { display: none; }
+math-field.ms-mathfield::part(virtual-keyboard-toggle) { display: none; }
+
+.ms-math-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--v-muted);
+}
+.ms-math-hint > span { flex: 1; min-width: 160px; }
+.ms-math-kb,
+.ms-math-fill {
+  border: 1px solid var(--v-border);
+  background: var(--v-surface);
+  color: var(--v-ink2);
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 650;
+  padding: 5px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .16s;
+}
+.ms-math-kb:hover {
+  color: var(--v-brand);
+  border-color: color-mix(in srgb, var(--v-via) 50%, var(--v-border));
+  background: var(--v-brand-soft);
+}
+.ms-math-fill {
+  background: var(--v-brand);
+  color: #fff;
+  border-color: transparent;
+}
+.ms-math-fill:hover { filter: brightness(1.08); }
+
+/* MathLive 虚拟键盘主题适配 */
+.ML__keyboard {
+  --keyboard-zindex: 1200;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .28) !important;
+}
+
+@media (max-width: 420px) {
+  math-field.ms-mathfield { font-size: 18px; min-height: 84px; padding: 10px 12px; }
+  .ms-math-hint > span { display: none; }
+}
