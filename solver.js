@@ -394,8 +394,17 @@
   /* ---------- 求解入口 ---------- */
   async function solve() {
     if (loading) return;
-    var input = ($('#msInput').value || '').trim();
-    if (!input) { setStatus('请先输入题目'); $('#msInput').focus(); return; }
+    var input = '';
+    if (window.MathInput) {
+      input = String(MathInput.getValue() || '').trim();
+    } else {
+      input = ($('#msInput').value || '').trim();
+    }
+    if (!input) {
+      setStatus('请先输入题目');
+      if (window.MathInput) MathInput.focus(); else $('#msInput').focus();
+      return;
+    }
 
     loading = true;
     var btn = $('#msSolve');
@@ -513,8 +522,8 @@
       b.type = 'button';
       b.textContent = it.label || '示例';
       b.addEventListener('click', function () {
-        $('#msInput').value = it.input;
-        $('#msInput').focus();
+        if (window.MathInput) { MathInput.setValue(it.input); MathInput.focus(); }
+        else { $('#msInput').value = it.input; $('#msInput').focus(); }
       });
       box.appendChild(b);
     });
@@ -529,10 +538,10 @@
 
     solveBtn.addEventListener('click', solve);
     $('#msClear').addEventListener('click', function () {
-      $('#msInput').value = '';
+      if (window.MathInput) MathInput.clear(); else $('#msInput').value = '';
       clearResult();
       setStatus('');
-      $('#msInput').focus();
+      if (window.MathInput) MathInput.focus(); else $('#msInput').focus();
     });
     // 模式切换
     var sw = $('#msModeSwitch');
@@ -594,6 +603,7 @@
     var page = $('#page-solver');
     if (!page) return;
     bind();
+    if (window.MathInput) window.MathInput.build();
     if (window.MathSolverOcr) window.MathSolverOcr.build();
     if (window.MathSolverKb) window.MathSolverKb.build();
     var lbl = $('#msApiLabel');
@@ -613,13 +623,13 @@
 
     var q = qs.get('q');
     var ta = $('#msInput');
-    if (q && ta && !ta.value) {
-      ta.value = q;
-      if (qs.get('auto') === '1') setTimeout(solve, 400);
-    } else if (!q && ta && !ta.value) {
+    if (q) {
+      if (window.MathInput) MathInput.setValue(q); else if (ta) ta.value = q;
+      if (qs.get('auto') === '1') setTimeout(solve, 500);
+    } else {
       try {
         var last = localStorage.getItem('m2solver:last');
-        if (last) ta.value = last;
+        if (last) { if (window.MathInput) MathInput.setValue(last); else if (ta) ta.value = last; }
       } catch (e) {}
     }
   }
