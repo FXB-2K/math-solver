@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>星云首页 · 数二真题全解</title>
+<link rel="stylesheet" href="home.css">
+<script src="deploy-mode.js"></script>
+<script src="clean-url.js"></script>
+</head>
+<body>
+<canvas id="nxCanvas" aria-hidden="true"></canvas>
+<div class="nx-vignette" aria-hidden="true"></div>
+
+<header class="nx-top">
+  <a class="nx-brand" href="home.html">
+    <span class="nx-logo">✦</span>
+    <span class="nx-brand-t"><b>数二真题全解</b><span>NEBULA HOME · 一镜到底</span></span>
+  </a>
+  <nav class="nx-nav">
+    <a href="index.html?app=1">题库</a>
+    <a href="english.html">英语词库</a>
+    <a href="index.html?app=1&tab=formula">公式</a>
+    <a href="index.html?app=1&tab=pattern">规律</a>
+  </nav>
+</header>
+
+<main class="nx-main">
+  <section class="nx-hero">
+    <span class="nx-eyebrow"><i></i>4K NEBULA · 运镜切换 · 黑洞跟随</span>
+    <h1>在星云里，<span>选择你的入口</span></h1>
+    <p>鼠标移到哪，黑洞就出现在哪。点击一张功能卡，镜头会沿着它的方向一路推进去——每一个入口后面，还有下一层选择。</p>
+  </section>
+
+  <section class="nx-cards" id="nxCards" aria-label="功能入口">
+    <button class="nx-card" data-href="index.html?app=1&tab=tiku" data-depth="1.15" type="button">
+      <span class="nx-card-top"><span class="nx-ic">题</span><span class="nx-idx">01</span></span>
+      <b>题库</b>
+      <span class="nx-desc">18 年 · 377 道真题，按年份拆开练</span>
+      <em>进入题库 <i>→</i></em>
+    </button>
+    <button class="nx-card" data-href="english.html" data-depth="0.9" type="button">
+      <span class="nx-card-top"><span class="nx-ic">语</span><span class="nx-idx">02</span></span>
+      <b>英语词库</b>
+      <span class="nx-desc">Oxford 3000 全库 2975 词 · 84 个已写故事</span>
+      <em>进入词库 <i>→</i></em>
+    </button>
+    <button class="nx-card" data-href="index.html?app=1&tab=formula" data-depth="1.0" type="button">
+      <span class="nx-card-top"><span class="nx-ic">式</span><span class="nx-idx">03</span></span>
+      <b>公式</b>
+      <span class="nx-desc">高数核心公式，按板块整理</span>
+      <em>打开公式 <i>→</i></em>
+    </button>
+    <button class="nx-card" data-href="index.html?app=1&tab=pattern" data-depth="0.8" type="button">
+      <span class="nx-card-top"><span class="nx-ic">律</span><span class="nx-idx">04</span></span>
+      <b>规律</b>
+      <span class="nx-desc">题型套路与命题规律</span>
+      <em>查看规律 <i>→</i></em>
+    </button>
+    <button class="nx-card" data-href="index.html?app=1&tab=me" data-depth="0.7" type="button">
+      <span class="nx-card-top"><span class="nx-ic">我</span><span class="nx-idx">05</span></span>
+      <b>我的</b>
+      <span class="nx-desc">学习进度与本地设置</span>
+      <em>进入我的 <i>→</i></em>
+    </button>
+  </section>
+
+  <p class="nx-hint">移动鼠标看黑洞 · 点击卡片镜头推进 · 进入后继续选下一层 · BUILD v3.38</p>
+</main>
+
+<div class="nx-dive" id="nxDive" aria-hidden="true"></div>
+
+<script src="home.js"></script>
+</body>
+</html>
+
