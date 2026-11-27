@@ -1,0 +1,309 @@
+/* ============================================================
+   MathSolver · 解题页（Velora UI 设计语言参考版）
+   - 深色极简 / 细边框 / 品牌渐变 / 大标题 / 步骤时间线
+   - 只作用于 #page-solver，不影响 App 其它页面
+   ============================================================ */
+
+#page-solver {
+  --v-surface: #ffffff;
+  --v-soft: #f6f7f9;
+  --v-ink: #0a0a0a;
+  --v-muted: #667085;
+  --v-border: rgba(10, 10, 10, .09);
+  --v-from: #4f46e5;
+  --v-via: #3b82f6;
+  --v-to: #06b6d4;
+  --v-brand: #4f46e5;
+  --v-brand-soft: rgba(79, 70, 229, .08);
+  --v-focus: rgba(59, 130, 246, .18);
+  --v-ok: #0e7a5f;
+  --v-ok-soft: rgba(14, 122, 95, .10);
+  --v-warn: #a8741a;
+  --v-warn-soft: rgba(214, 166, 32, .14);
+  --v-warn-border: rgba(180, 138, 20, .30);
+  --v-err: #b42318;
+  --v-err-soft: rgba(220, 38, 38, .08);
+  --v-err-border: rgba(220, 38, 38, .28);
+  position: relative;
+  padding-top: 4px;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+[data-theme="dark"] #page-solver {
+  --v-surface: #111113;
+  --v-soft: #17171a;
+  --v-ink: #f2f2f7;
+  --v-muted: #9aa0ab;
+  --v-border: rgba(255, 255, 255, .10);
+  --v-brand: #818cf8;
+  --v-brand-soft: rgba(129, 140, 248, .15);
+  --v-focus: rgba(129, 140, 248, .22);
+  --v-ok: #34d399;
+  --v-ok-soft: rgba(52, 211, 153, .14);
+  --v-warn: #fbbf24;
+  --v-warn-soft: rgba(251, 191, 36, .12);
+  --v-warn-border: rgba(251, 191, 36, .30);
+  --v-err: #f87171;
+  --v-err-soft: rgba(248, 113, 113, .10);
+  --v-err-border: rgba(248, 113, 113, .30);
+}
+
+/* ---------------- Hero ---------------- */
+.v-hero { position: relative; padding: 14px 2px 16px; }
+.v-hero::before {
+  content: "";
+  position: absolute; inset: -30px -24px -10px;
+  background:
+    radial-gradient(60% 80% at 18% 0%, color-mix(in srgb, var(--v-via) 22%, transparent) 0%, transparent 70%),
+    radial-gradient(50% 70% at 92% 12%, color-mix(in srgb, var(--v-to) 16%, transparent) 0%, transparent 70%);
+  filter: blur(18px);
+  opacity: .55;
+  pointer-events: none;
+  z-index: 0;
+}
+[data-theme="dark"] .v-hero::before { opacity: .38; }
+.v-hero > * { position: relative; z-index: 1; }
+
+.v-eyebrow {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 11.5px; font-weight: 600; letter-spacing: .02em;
+  color: var(--v-muted);
+  border: 1px solid var(--v-border);
+  background: color-mix(in srgb, var(--v-surface) 78%, transparent);
+  border-radius: 999px; padding: 5px 12px;
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.v-pulse {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, .16);
+  animation: vPulse 2.4s ease-in-out infinite;
+}
+@keyframes vPulse {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(34, 197, 94, .14); }
+  50% { box-shadow: 0 0 0 5px rgba(34, 197, 94, .04); }
+}
+
+.v-title {
+  margin: 14px 0 8px;
+  font-size: 27px; line-height: 1.25; font-weight: 780;
+  letter-spacing: -.025em;
+  color: var(--v-ink);
+}
+.v-grad {
+  background: linear-gradient(112deg, var(--v-from), var(--v-via) 48%, var(--v-to));
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+.v-sub { margin: 0; font-size: 12.5px; line-height: 1.75; color: var(--v-muted); }
+
+/* ---------------- Panel ---------------- */
+.v-panel {
+  position: relative;
+  background: var(--v-surface);
+  border: 1px solid var(--v-border);
+  border-radius: 16px;
+  padding: 14px;
+  margin: 12px 0;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .03);
+}
+[data-theme="dark"] .v-panel { box-shadow: none; }
+.v-panel-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 8px; margin-bottom: 10px;
+}
+.v-label {
+  font-size: 11px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--v-muted);
+}
+.v-note { font-size: 11px; color: var(--v-muted); }
+.v-kbd {
+  font-size: 10.5px; color: var(--v-muted);
+  border: 1px solid var(--v-border); border-radius: 6px;
+  padding: 2px 7px; background: var(--v-soft);
+}
+
+/* ---------------- 输入区 ---------------- */
+.v-textarea {
+  width: 100%; box-sizing: border-box; min-height: 106px; resize: vertical;
+  padding: 12px 13px;
+  border: 1px solid var(--v-border); border-radius: 12px;
+  background: var(--v-soft); color: var(--v-ink);
+  font: 13.5px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  outline: none; -webkit-appearance: none;
+  transition: border-color .18s, box-shadow .18s;
+}
+.v-textarea::placeholder { color: color-mix(in srgb, var(--v-muted) 72%, transparent); }
+.v-textarea:focus { border-color: var(--v-via); box-shadow: 0 0 0 4px var(--v-focus); }
+
+.v-examples { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.v-examples .ms-chip {
+  border: 1px solid var(--v-border); background: transparent; color: var(--v-muted);
+  border-radius: 999px; padding: 5px 11px; font-size: 12px; cursor: pointer;
+  font-family: inherit; transition: all .16s;
+}
+.v-examples .ms-chip:hover {
+  color: var(--v-ink); border-color: color-mix(in srgb, var(--v-via) 45%, var(--v-border));
+  background: var(--v-brand-soft);
+}
+
+.v-actions { display: flex; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.v-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  border-radius: 999px; padding: 9px 18px;
+  font-size: 13.5px; font-weight: 650; font-family: inherit;
+  cursor: pointer; transition: transform .12s, box-shadow .18s, opacity .18s;
+}
+.v-btn:active { transform: translateY(1px) scale(.995); }
+.v-btn-primary {
+  border: none; color: #fff;
+  background: linear-gradient(135deg, var(--v-from), var(--v-via) 55%, var(--v-to));
+  box-shadow: 0 6px 18px -8px color-mix(in srgb, var(--v-via) 60%, transparent);
+}
+.v-btn-primary:disabled { opacity: .55; cursor: not-allowed; box-shadow: none; }
+.v-btn-ghost {
+  border: 1px solid var(--v-border); background: transparent; color: var(--v-muted);
+}
+.v-btn-ghost:hover { color: var(--v-ink); border-color: color-mix(in srgb, var(--v-muted) 40%, var(--v-border)); }
+.v-status { font-size: 12px; color: var(--v-muted); }
+
+/* ---------------- 答案卡 ---------------- */
+.v-answer {
+  border: 1px solid transparent;
+  border-radius: 18px;
+  padding: 16px;
+  background:
+    linear-gradient(var(--v-surface), var(--v-surface)) padding-box,
+    linear-gradient(135deg, var(--v-from), var(--v-via) 50%, var(--v-to)) border-box;
+}
+[data-theme="dark"] .v-answer {
+  background:
+    linear-gradient(var(--v-surface), var(--v-surface)) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--v-from) 70%, #fff), var(--v-to)) border-box;
+}
+.v-answer-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.v-badges { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+
+.ms-badge {
+  display: inline-flex; align-items: center;
+  font-size: 11px; font-weight: 650; letter-spacing: .01em;
+  padding: 3px 10px; border-radius: 999px;
+  border: 1px solid var(--v-border);
+  background: var(--v-soft); color: var(--v-muted);
+}
+.ms-badge.chip-kind { border-color: transparent; background: var(--v-brand-soft); color: var(--v-brand); }
+.ms-badge.mode { border-color: transparent; background: var(--v-ok-soft); color: var(--v-ok); }
+.ms-badge.mode.ref { background: var(--v-warn-soft); color: var(--v-warn); }
+
+.v-copy {
+  border: 1px solid var(--v-border); background: transparent; color: var(--v-muted);
+  font-size: 11.5px; padding: 4px 10px; border-radius: 8px;
+  cursor: pointer; font-family: inherit;
+}
+.v-copy:hover { color: var(--v-brand); border-color: var(--v-brand); }
+
+.v-answer-label {
+  margin: 16px 0 6px; text-align: center;
+  font-size: 10.5px; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--v-muted);
+}
+.v-answer-body {
+  font-size: 20px; font-weight: 720; line-height: 1.75;
+  text-align: center; overflow-x: auto; overflow-wrap: anywhere;
+  color: var(--v-ink); padding: 2px 0;
+}
+.v-answer-body .raw {
+  font: 13px/1.6 ui-monospace, Menlo, Consolas, monospace;
+  white-space: pre-wrap; text-align: left;
+}
+.v-meta { margin-top: 6px; text-align: center; font-size: 11px; color: var(--v-muted); }
+
+/* ---------------- 方法 ---------------- */
+.v-method { display: flex; flex-direction: column; gap: 5px; font-size: 12.5px; color: var(--v-muted); line-height: 1.7; }
+.v-method > div:first-child { color: var(--v-ink); font-weight: 620; }
+
+/* ---------------- 步骤时间线 ---------------- */
+.v-steps { position: relative; display: flex; flex-direction: column; gap: 14px; }
+.v-steps::before {
+  content: "";
+  position: absolute; left: 11.5px; top: 8px; bottom: 8px; width: 1px;
+  background: linear-gradient(var(--v-border), color-mix(in srgb, var(--v-border) 30%, transparent));
+}
+.ms-step { position: relative; padding-left: 36px; }
+.ms-sno {
+  position: absolute; left: 0; top: 1px;
+  width: 24px; height: 24px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 11px; font-weight: 700; color: var(--v-brand);
+  background: var(--v-brand-soft); border: 1px solid var(--v-border);
+}
+.ms-sact { font-size: 13px; font-weight: 640; color: var(--v-ink); line-height: 1.65; }
+.ms-sbody { margin-top: 4px; font-size: 14px; color: var(--v-ink); overflow-x: auto; overflow-wrap: anywhere; }
+.ms-sbody .raw { font: 12.5px/1.6 ui-monospace, Menlo, Consolas, monospace; white-space: pre-wrap; }
+.ms-meta { margin-top: 4px; font-size: 11px; color: var(--v-muted); }
+
+/* ---------------- 考点 / 公式 ---------------- */
+.v-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.ms-tag {
+  border: 1px solid var(--v-border); border-radius: 10px;
+  padding: 8px 10px; font-size: 12px; color: var(--v-muted);
+  background: var(--v-soft); max-width: 100%; overflow-wrap: anywhere;
+}
+.ms-tag b { color: var(--v-ink); font-weight: 650; font-size: 12.5px; }
+.ms-tag .tid { margin-left: 6px; font-size: 10.5px; color: var(--v-muted); }
+.ms-tag .ms-fml { margin-top: 6px; overflow-x: auto; overflow-wrap: anywhere; }
+
+/* ---------------- 提示 / 错误 ---------------- */
+.v-alert {
+  border-radius: 14px; padding: 12px 14px; margin: 12px 0;
+  border: 1px solid var(--v-border); font-size: 12.5px; line-height: 1.7;
+}
+.v-alert-title { font-size: 11px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
+.v-alert-warn { background: var(--v-warn-soft); border-color: var(--v-warn-border); color: var(--v-warn); }
+.v-alert-warn ul { margin: 0; padding-left: 18px; }
+.v-alert-err { background: var(--v-err-soft); border-color: var(--v-err-border); color: var(--v-err); }
+.v-alert-err p { margin: 0; }
+
+.v-hint { font-size: 12.5px; color: var(--v-muted); line-height: 1.75; }
+.v-hint .ms-sact { color: var(--v-ink); font-size: 12.5px; margin-bottom: 4px; }
+.v-hint ol { margin: 6px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; }
+.v-hint .pit { margin-top: 9px; color: var(--v-warn); font-size: 11.5px; }
+
+/* ---------------- 脚注 ---------------- */
+.v-footer-note { margin: 14px 2px 8px; font-size: 11px; line-height: 1.7; color: var(--v-muted); }
+.v-footer-note code {
+  font-size: 10.5px; padding: 1px 5px; border-radius: 5px;
+  background: var(--v-soft); border: 1px solid var(--v-border);
+}
+
+/* ---------------- 出现动画（轻量，避免截图/低端机闪烁）---------------- */
+#msResult:not([hidden]) .v-panel,
+#msResult:not([hidden]) .v-alert {
+  animation: vIn .18s ease-out;
+}
+@keyframes vIn {
+  from { opacity: .55; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .v-pulse { animation: none; }
+  #msResult:not([hidden]) .v-panel,
+  #msResult:not([hidden]) .v-alert { animation: none; }
+}
+
+@media (min-width: 720px) {
+  .v-hero { padding: 20px 2px 20px; }
+  .v-title { font-size: 32px; }
+  .v-sub { font-size: 13.5px; }
+  .v-panel { padding: 18px; border-radius: 18px; }
+  .v-textarea { min-height: 118px; font-size: 14px; }
+  .v-answer-body { font-size: 24px; }
+  .v-footer-note { font-size: 11.5px; }
+}
+
+@media (max-width: 359px) {
+  .v-title { font-size: 23px; }
+  .v-answer-body { font-size: 17px; }
+  .v-btn { padding: 8px 14px; font-size: 13px; }
+}
