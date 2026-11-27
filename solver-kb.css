@@ -1,0 +1,80 @@
+/* ============================================================
+   符号键盘样式（解题页）
+   ============================================================ */
+.ms-kb {
+  margin-top: 10px;
+  border: 1px solid var(--v-border);
+  border-radius: 12px;
+  background: var(--v-soft);
+  overflow: hidden;
+}
+.ms-kb-head {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--v-border);
+  font-size: 11px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--v-muted);
+}
+.ms-kb-head b { margin-left: auto; font-weight: 600; letter-spacing: 0; text-transform: none; font-size: 10.5px; }
+.ms-kb-tabs { display: flex; gap: 4px; }
+.ms-kb-tabs button {
+  border: 1px solid transparent; background: transparent;
+  color: var(--v-muted); font-size: 11px; font-weight: 650;
+  padding: 3px 9px; border-radius: 7px; cursor: pointer; font-family: inherit;
+}
+.ms-kb-tabs button.on { background: var(--v-surface); color: var(--v-brand); border-color: var(--v-border); }
+.ms-kb-body { padding: 10px 12px 12px; }
+.ms-kb-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.ms-kb-row + .ms-kb-row { margin-top: 6px; }
+.ms-kb-row button {
+  min-width: 38px; height: 34px; padding: 0 9px;
+  border: 1px solid var(--v-border);
+  border-radius: 9px;
+  background: var(--v-surface);
+  color: var(--v-ink);
+  font-size: 15px; font-family: "Cambria Math", "Times New Roman", serif;
+  cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: all .14s;
+}
+.ms-kb-row button:hover {
+  border-color: color-mix(in srgb, var(--v-via) 55%, var(--v-border));
+  background: var(--v-brand-soft);
+  color: var(--v-brand);
+}
+.ms-kb-row button:active { transform: scale(.94); }
+.ms-kb-row button.wide { min-width: 58px; font-size: 12.5px; font-family: inherit; font-weight: 600; }
+.ms-kb-row button.txt { min-width: auto; padding: 0 11px; font-size: 12px; font-family: inherit; font-weight: 600; }
+.ms-kb-hidden { display: none !important; }
+
+/* 识别结果提示 */
+.ms-read {
+  margin-top: 10px; padding: 9px 12px;
+  border-radius: 10px;
+  background: var(--v-brand-soft);
+  border: 1px solid color-mix(in srgb, var(--v-brand) 22%, transparent);
+  font-size: 11.5px; line-height: 1.65; color: var(--v-ink2);
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+}
+.ms-read b { color: var(--v-brand); font-weight: 700; }
+.ms-read code {
+  font: 11px/1.5 ui-monospace, Menlo, Consolas, monospace;
+  background: color-mix(in srgb, var(--v-surface) 70%, transparent);
+  padding: 1px 6px; border-radius: 5px;
+  border: 1px solid var(--v-border);
+  max-width: 100%; overflow-wrap: anywhere;
+}
+.ms-read .ms-warn-tag { color: var(--v-warn); font-weight: 650; }
+
+/* 纯文字答案（非公式） */
+.ms-answer-body .plain {
+  font-size: 14px; font-weight: 500; line-height: 1.85;
+  text-align: left; white-space: pre-wrap;
+}
+.ms-answer-body .big { font-size: 26px; }
+.ms-answer-body .raw { font-size: 14px; }
+
+@media (max-width: 420px) {
+  .ms-kb-row button { min-width: 34px; height: 32px; font-size: 14px; }
+  .ms-kb-row button.wide { min-width: 50px; font-size: 11.5px; }
+}
