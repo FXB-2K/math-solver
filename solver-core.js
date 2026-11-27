@@ -354,6 +354,15 @@
     var s = String(raw == null ? '' : raw);
     if (!s.trim()) return '';
     s = s.replace(/\r?\n/g, ' ');
+
+    // ---- 有 LaTeX 命令时，先用专用转换器处理（MathLive 等编辑器输出）----
+    if (/\\[a-zA-Z]{2,}/.test(s) && global.LaTeX2Cas) {
+      try {
+        var conv = global.LaTeX2Cas.convert(s);
+        if (conv && conv !== s) s = conv;
+      } catch (e) { /* 转换失败就走老路 */ }
+    }
+
     s = fixSupSub(s);
     s = fixLatex(s);
     s = fixUnicode(s);
