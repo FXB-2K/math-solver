@@ -85,6 +85,17 @@
       }
     }
 
+    // ---- 2.5) 深色背景自动反色 ----
+    // 手机截图/深色主题的图是「白字黑底」，tesseract 只认黑字白底，
+    // 不反色的话识别率会掉到谷底（实测平均亮度 39 的截图几乎全错）
+    var sumBright = 0;
+    for (var sb = 0; sb < n; sb += 7) sumBright += sharp[sb];   // 抽样加速
+    var avgBright = sumBright / Math.ceil(n / 7);
+    if (avgBright < 118) {
+      for (var iv = 0; iv < n; iv++) sharp[iv] = 255 - sharp[iv];
+      avgBright = 255 - avgBright;
+    }
+
     // ---- 3) Otsu 自动阈值 ----
     var hist = new Array(256);
     for (var q = 0; q < 256; q++) hist[q] = 0;
@@ -390,6 +401,36 @@
     return s.trim();
   }
 
+  /* ---------- 文本 → LaTeX 粗转（把 OCR 文本变得像公式） ----------
+     只是让排版好看些，不保证语义正确；用户可以在 MathLive 里继续改
+     ------------------------------------------------------------ */
+  function textToLatex(t) {
+    var s = String(t || '');
+    // 中文句子整行保留为 \text{}
+    var lines = s.split('\n');
+    return lines.map(function (ln) {
+      var raw = ln.trim();
+      if (!raw) return '';
+      var hasCJK = /[\u4e00-\u9fa5]/.test(raw);
+      var hasMath = /[=+\-*/^∫√∑\d]/.test(raw);
+      if (hasCJK && !hasMath) {
+        return '\\text{' + raw.replace(/[{}\\]/g, '') + '}';
+      }
+      if (hasCJK && hasMath) {
+        // 混排：中文段包 \text{}，数学段保留
+        var parts = raw.split(/([\u4e00-\u9fa5，。、；：（）\s]+)/);
+        return parts.map(function (p) {
+          if (/[\u4e00-\u9fa5，。、；：（）]/.test(p)) {
+            var q = p.replace(/[{}\\]/g, '').trim();
+            return q ? '\\text{' + q + '}' : '';
+          }
+          return p;
+        }).join(' ');
+      }
+      return raw;
+    }).join(' \\\\ ');
+  }
+
   /* ---------- 二次校对提示：检测可疑片段 ---------- */
   function suspectList(text) {
     var out = [];
@@ -577,11 +618,21 @@
       if (v) out.push(v);
     });
     var text = out.join('\n');
-    var ta = $('#msInput');
-    if (ta) {
-      ta.value = text;
-      ta.focus();
-      ta.dispatchEvent(new Event('input', { bubbles: true }));
+
+    // 优先填进专业公式输入框（MathLive），这样用户能看到专业排版
+    if (global.MathInput && global.MathInput.setValue) {
+      try {
+        global.MathInput.setValue(textToLatex(text));
+        global.MathInput.setMode('math');
+        global.MathInput.focus();
+      } catch (e) {}
+    } else {
+      var ta0 = $('#msInput');
+      if (ta0) {
+        ta0.value = text;
+        ta0.focus();
+        ta0.dispatchEvent(new Event('input', { bubbles: true }));
+      }
     }
     var box = $('#msProof');
     if (box) box.hidden = true;
