@@ -1,0 +1,36 @@
+{
+  "name": "考研真题全解",
+  "short_name": "真题全解",
+  "description": "考研数学（2008–2025）、政治（2010–2024）与英语二（2018）真题：题面、考点、逐句演算、点词查义与答案，支持整卷模拟",
+  "start_url": "./index.html?sharecode=3CVHZMQXIV",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F2F3F7",
+  "theme_color": "#2563EB",
+  "lang": "zh-CN",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
