@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-page-node-id="pwGLuGj4vZ8N4GtCxxHMiA">
+<head data-page-node-id="gFS3rvq6ZfUEFjw7KSzPWn">
+<meta charset="utf-8" data-page-node-id="GOS2fSkuzOBIo9ct5Fg2ix">
+<script>
+/* 首屏前应用品牌色，避免闪烁 */
+try {
+  var _r = localStorage.getItem('m2:ramp') || 'blue';
+  document.documentElement.setAttribute('data-ramp', _r);
+} catch (e) {}
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no" data-page-node-id="2ZD0HTpYy9oUBCKgi2vy7E">
+<meta name="theme-color" content="#F2F3F7" media="(prefers-color-scheme: light)" data-page-node-id="c2H9LJToaE8vhEKesCSxKH">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" data-page-node-id="i9DZph0P4dvnec9oAkMfem">
+<meta name="apple-mobile-web-app-capable" content="yes" data-page-node-id="YOXAx83RA9HULzvr9KgK9o">
+<meta name="apple-mobile-web-app-status-bar-style" content="default" data-page-node-id="5bymIeNZ6cUl89s6VFLykz">
+<meta name="apple-mobile-web-app-title" content="数二真题" data-page-node-id="IDB2tzeprDj83qZpqayizY">
+<meta name="format-detection" content="telephone=no" data-page-node-id="strEzTBV36GsEJBGzAsiQL">
+<link rel="manifest" href="manifest.webmanifest" data-page-node-id="ENcnrc47eOpm3nzsFr4ufQ">
+<link rel="apple-touch-icon" href="icon-180.png" data-page-node-id="adg3hc7WQvozhEjFHnbfkm">
+<link rel="icon" href="icon-192.png" data-page-node-id="mNuWciq0r2tAoCzW98dOAV">
+<title>数二真题全解</title>
+<script src="deploy-mode.js"></script>
+<script src="clean-url.js"></script>
+<link rel="stylesheet" href="app.css" data-page-node-id="Y8EyH4viP9egMIhGjS7DBC">
+<link rel="stylesheet" href="solver.css">
+<link rel="stylesheet" href="solver-kb.css">
+<link rel="stylesheet" href="problem-parse.css">
+<link rel="stylesheet" href="ocr.css">
+<link rel="stylesheet" href="ocr-proof.css">
+<link rel="stylesheet" href="web.css">
+<link rel="stylesheet" href="brand.css">
+<link rel="stylesheet" href="tiku.css">
+</head>
+<body data-page-node-id="tKnbgTC3YgzZ5oI8AJeSBd">
+
+<div id="app" data-page-node-id="ljxzcgISl9jbvaRBHnMYr1">
+
+  <!-- ============ 顶部栏 ============ -->
+  <header class="topbar" id="topbar" data-page-node-id="spyKovh9eLChLfXtSLlGRz">
+    <div class="tb-row" data-page-node-id="mnscSUGHRKG6zFJ2EXZ8WC">
+      <div class="tb-title" data-page-node-id="KhhY293XE8ljOBdDLp7WZl">
+        <h1 id="pageTitle" data-page-node-id="cmwTQGFJoBJBdDs4rxyG3T">题库</h1>
+        <p id="pageSub" data-page-node-id="SBGOBO9GOFha5SS5Kn2N6q">加载中…</p>
+      </div>
+      <button class="tb-btn" id="btnTheme" aria-label="切换主题" data-page-node-id="fboaUyZQ48b7Alot1Gs5rv">
+        <svg class="ic-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" data-page-node-id="SK7XYL0eHnpjFV1aaklPEo">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" data-page-node-id="VlTciKv04JUmIUfifWeYzb"/>
+        </svg>
+        <svg class="ic-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" data-page-node-id="eKeiTT6FehJIBoY1AGG1AP">
+          <circle cx="12" cy="12" r="4.2" data-page-node-id="yld2si9AR8Q6YPB3ADLiZT"/>
+          <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" data-page-node-id="YME7JAmA0DHPRMOHJ99g4N"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search" id="searchWrap" data-page-node-id="jJsCpvoOArLjNuOM4GjGJp">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" data-page-node-id="7IDW5rqx34c2F9P11iWrtV">
+        <circle cx="11" cy="11" r="7" data-page-node-id="0q7ZJOhPBRzKqvvpaD47rd"/><path d="M20 20l-3.2-3.2" data-page-node-id="eq7umNrUnqchHIwcAb5RRW"/>
+      </svg>
+      <input id="searchInput" type="search" placeholder="搜题号、题型、知识点" autocomplete="off" enterkeyhint="search" data-page-node-id="rBDXMYFuFeqK7Rr4Bg8lbZ">
+      <button id="searchClear" class="s-clear" aria-label="清空" data-page-node-id="xkHBWjJSamQIoWlGkgw6Q0">×</button>
+    </div>
+  </header>
+
+  <!-- ============ 主内容区 ============ -->
+  <main id="main" data-page-node-id="vWDA8JAXRZrbo3fsHvGHs6">
+
+    <!-- ---------- 题库 ---------- -->
+    <section class="page" id="page-tiku" data-page-node-id="NyAR2FhqbC59LFKc0FhkxC">
+      <div class="subbar" id="subBar" data-page-node-id="rXxTHodPDozqtuhtm5s1xB"></div>
+      <div class="chips" id="yearChips" data-page-node-id="PpEmHBxbwbOMzUCClFsEk3"></div>
+      <div class="paper-bar" id="paperBar" hidden data-page-node-id="O5xWX51NMQQoeCT0XOoTDh">
+        <span id="paperInfo" data-page-node-id="7ODdqJ3L4cTC6cwiysFSPX"></span>
+        <button id="btnPaper" data-page-node-id="ts0dWzAR7kOpDa2aeyJZU1">整卷模拟</button>
+      </div>
+      <div id="listWrap" class="list" data-page-node-id="glhMaowulmnAFkAKiYttYb"></div>
+      <div class="list-end" id="listEnd" data-page-node-id="j1Ba70QbFDnivwFj4mc0UF"></div>
+    </section>
+
+    <!-- ---------- 题型分类 ---------- -->
+    <section class="page" id="page-type" hidden data-page-node-id="Y5PNKTEOSindkAodnhXdW2">
+      <p class="lead" id="typeLead" data-page-node-id="LRjRaodukC7GLCdCWQpivi">按题型归类，每道题上方标出它考的知识点。</p>
+      <div id="typeWrap" class="acc" data-page-node-id="JwGc76Tdyh95LG9gcCBEw5"></div>
+    </section>
+
+    <!-- ---------- 公式 ---------- -->
+    <section class="page" id="page-formula" hidden data-page-node-id="TFUGRrWDKWaashNEjA9AaC">
+      <p class="lead" id="formulaLead" data-page-node-id="uegJSXPR8KfTgQ7cA2hG5M">全部公式汇总，点开一组看全文。</p>
+      <div id="chpBar" class="chp-bar" hidden>
+        <div class="chp-srch">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.2-3.2"/></svg>
+          <input id="chpSearch" type="search" autocomplete="off" placeholder="搜公式，如「换元」「中值定理」「特征值」">
+          <button id="chpClear" class="chp-clr" hidden aria-label="清空">×</button>
+        </div>
+        <div id="chpBooks" class="chp-books"></div>
+      </div>
+      <div id="formulaWrap" class="acc" data-page-node-id="rUnWGfUhKVMozgbqoWWymQ"></div>
+    </section>
+
+    <!-- ---------- 规律 ---------- -->
+    <section class="page" id="page-map" hidden data-page-node-id="yiCw2tI74OrICLfUfLDXCb">
+      <p class="lead" data-page-node-id="qvbsgQTFVyDCw0cKmHYlZk">同一题位，历年都在换什么。看完就知道该练什么。</p>
+      <div id="mapWrap" data-page-node-id="jbN3D7MvM7hrTJ96Jg9unl"></div>
+      <h2 class="sec-title" data-page-node-id="zOvYSceGJ3Dt7ZF7gm1TOj">历年观察</h2>
+      <div id="insightWrap" class="insights" data-page-node-id="BobN0OSC67xlcUIiuKY6Jl"></div>
+    </section>
+
+    <!-- ---------- 解题 ---------- -->
+    <section class="page" id="page-solver" hidden>
+      <div class="v-hero">
+        <div class="v-eyebrow"><span class="v-pulse"></span>MathSolver Engine · 浏览器本地计算</div>
+        <h2 class="v-title">把题目丢进来，<br><span class="v-grad">步骤、考点、公式</span>一起给你</h2>
+        <p class="v-sub">任何算式都能算：加减乘除、根号、方程、求导、积分、极限、化简。中文口语直接写，例如「解方程 2x+3=7」「∫_0^1 x^2 dx」。下方有符号键盘，不用打字也能输入根号和积分号。</p>
+      </div>
+
+      <div class="v-panel v-composer">
+        <div class="ms-mode-switch" id="msModeSwitch">
+          <button type="button" class="on" data-mode="single">单个算式<small>一行，直接算</small></button>
+          <button type="button" data-mode="whole">整道题<small>粘整段，自动拆小问</small></button>
+        </div>
+        <div class="v-panel-head">
+          <span class="v-label" id="msInputLabel">题目输入</span>
+          <span class="v-kbd">Ctrl + Enter</span>
+        </div>
+        <textarea id="msInput" class="v-textarea" rows="4" spellcheck="false"
+          placeholder="例：\lim_{x\to0}\frac{\sin x-x}{x^3}   或   求 ∫_0^1 x^2 e^x dx"></textarea>
+        <div class="v-examples" id="msExamples"></div>
+        <div class="v-actions">
+          <button id="msSolve" class="v-btn v-btn-primary" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            解题
+          </button>
+          <button id="msClear" class="v-btn v-btn-ghost" type="button">清空</button>
+          <span id="msStatus" class="v-status"></span>
+        </div>
+      </div>
+
+      <div id="msWholeResult" hidden>
+        <div class="v-panel">
+          <div class="v-panel-head">
+            <span class="v-label">整题解析</span>
+            <span class="v-note" id="msWholeNote"></span>
+          </div>
+          <div id="msWholeSummary" class="ms-summary" hidden></div>
+          <div id="msWholeBlocks" class="ms-blocks"></div>
+        </div>
+      </div>
+
+      <div id="msResult" hidden>
+        <div class="v-panel v-answer">
+          <div class="v-answer-top">
+            <div class="v-badges">
+              <span id="msKind" class="ms-badge chip-kind"></span>
+              <span id="msMode" class="ms-badge mode"></span>
+            </div>
+            <button id="msCopy" class="v-copy" type="button" hidden>复制</button>
+          </div>
+          <div class="v-answer-label">答案</div>
+          <div id="msAnswer" class="v-answer-body"></div>
+          <div id="msMeta" class="v-meta"></div>
+        </div>
+
+        <div class="v-panel" id="msMethodCard" hidden>
+          <div class="v-panel-head"><span class="v-label">方法选择</span></div>
+          <div id="msMethod" class="v-method"></div>
+        </div>
+
+        <div class="v-panel" id="msStepsCard" hidden>
+          <div class="v-panel-head"><span class="v-label">解题步骤</span><span class="v-note" id="msStepNote"></span></div>
+          <div id="msSteps" class="v-steps"></div>
+        </div>
+
+        <div class="v-panel" id="msTagsCard" hidden>
+          <div class="v-panel-head"><span class="v-label">考点 / 公式</span></div>
+          <div id="msTags" class="v-tags"></div>
+        </div>
+
+        <div class="v-alert v-alert-warn" id="msWarnCard" hidden>
+          <div class="v-alert-title">注意</div>
+          <ul id="msWarns"></ul>
+        </div>
+
+        <div class="v-alert v-alert-err" id="msErrCard" hidden>
+          <div class="v-alert-title">未能求解</div>
+          <p id="msErr"></p>
+        </div>
+
+        <div class="v-panel" id="msHintCard" hidden>
+          <div class="v-panel-head"><span class="v-label">思路提示</span><span class="v-note">参考，非严格证明</span></div>
+          <div id="msHint" class="v-hint"></div>
+        </div>
+      </div>
+
+      <p class="v-footer-note">计算方式：<code id="msApiLabel">—</code> · 全部在浏览器本地完成，不联网也能算</p>
+    </section>
+
+    <!-- ---------- 我的 ---------- -->
+    <section class="page" id="page-me" hidden data-page-node-id="6PhDUc6gYwfNfnacb6s9q3">
+      <div class="prof-card" data-page-node-id="2gulF2kGitFhbVDyZSuAJz">
+        <div class="ring" data-page-node-id="iK7D4BDtHPIOgKpYBAPLAi">
+          <svg viewBox="0 0 100 100" width="92" height="92" data-page-node-id="Ht4B7eGQBdjUCfFACym9Lc">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--line)" stroke-width="9" data-page-node-id="kGE7L1zhAQq4oTdmFB7ARl"/>
+            <circle id="ringFg" cx="50" cy="50" r="42" fill="none" stroke="var(--accent)"
+                    stroke-width="9" stroke-linecap="round" transform="rotate(-90 50 50)"
+                    stroke-dasharray="264" stroke-dashoffset="264" data-page-node-id="ZLFcdYu29G7Y2oLDUWsVrM"/>
+          </svg>
+          <span id="ringTxt" data-page-node-id="iVLO9Nfy6sRmBMHoVCy1D6">0%</span>
+        </div>
+        <div class="prof-txt" data-page-node-id="yRAgugn5rMTT0qFjkMWB76">
+          <p class="pt-num" data-page-node-id="Nxs7AAWzPxMKVzkOor3vAI"><b id="doneCount" data-page-node-id="IJauTIByeGgqVZtnOX1mIR">0</b> / <span id="totalNum" data-page-node-id="Tp81332BUrUXQ563GVpvxF">0</span> 题已掌握</p>
+          <p class="pt-sub" id="profSub" data-page-node-id="z6Glg2qllRSNrH6KjJWSJR">从第一道开始</p>
+        </div>
+      </div>
+
+      <h2 class="sec-title" data-page-node-id="aJZxzAeqnhL5On3PCg5iEM">资料</h2>
+      <div class="grp" data-page-node-id="wyZFnTND5aGzMDZAFgrxAH">
+        <button class="row row-tap" id="btnWords">
+          <span>生词本<em class="ver" id="wordCnt">点词自动收录</em></span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <a class="row row-tap" href="review.html" data-page-node-id="UUzMnC0tBC1Ze1ArLX1BWV">
+          <span data-page-node-id="TR5HZ36sfzvMcVduHX0CIW">六年复盘<em class="ver" data-page-node-id="MXksPyZw9fC24scBPxebgu">白话讲解 · 踩坑提醒 · 8 个题族</em></span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" data-page-node-id="k4SsA8RODOQP2I9MAE3AH6"><path d="M9 18l6-6-6-6" data-page-node-id="CbgD8F2XtOkUy9rPkODyge"/></svg>
+        </a>
+      </div>
+
+      <h2 class="sec-title" data-page-node-id="CJABNDAV9wjBZQOuEIsbCg">设置</h2>
+      <div class="grp" data-page-node-id="wuY3qA71BCumOdfV63070e">
+        <div class="row" data-page-node-id="ifJgy6uYfo4Rv7QIOv1BDe">
+          <span data-page-node-id="lAVvtwYrFSlDIMPVizBzEV">外观</span>
+          <div class="seg" id="segTheme" data-page-node-id="9LlENsXJtDtTe73jXXUZ1N">
+            <button data-v="light" data-page-node-id="EMd3hCrjatCP0lCenLFfox">浅色</button>
+            <button data-v="dark" data-page-node-id="ROR7K6lryqD9rhcGe6FCjk">深色</button>
+            <button data-v="auto" data-page-node-id="SJyqh21uMlKVBVUm6QaiFd">跟随</button>
+          </div>
+        </div>
+        <div class="row" data-page-node-id="URImWBk12MC1suUzGNVjyz">
+          <span data-page-node-id="UCdP4D6DCOKdFgdgMaxWAh">正文字号</span>
+          <div class="seg" id="segFont" data-page-node-id="lJfkcly7cfejzEhGUkkvGk">
+            <button data-v="s" data-page-node-id="oUaUuHt9tevDBJiimBIBY6">小</button>
+            <button data-v="m" data-page-node-id="mwA4jGJGnf7PM8tfGIZaaS">中</button>
+            <button data-v="l" data-page-node-id="2mrVr8rINeKHbGxkUEWxm9">大</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grp" data-page-node-id="WbDBwEMOlpoayN7yLHJAjz">
+        <button class="row row-tap" id="btnInstall" data-page-node-id="5aNdCMYtgmh1rDqcuXFEbJ">
+          <span id="installLbl" data-page-node-id="l0lhKL6Umsh1IUbM8EAw7R">安装到手机桌面</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" data-page-node-id="wiZCHMKkTfG4M7EvT7IFXB"><path d="M9 18l6-6-6-6" data-page-node-id="HsELmO62gsPBdfbXcPRn53"/></svg>
+        </button>
+        <button class="row row-tap" id="btnUpdate" data-page-node-id="DPUbegUAvXBTQfzdcxNPbo">
+          <span data-page-node-id="I5KYlCJRyRf06ECtillKeF">检查更新<em class="ver" id="verTxt" data-page-node-id="4BL6q7h01nHjGGQgibFnUi"></em></span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" data-page-node-id="2lmViuPs83GX6wgUz22ilP"><path d="M9 18l6-6-6-6" data-page-node-id="2uvfuHPqHNLl8xMxisdyFb"/></svg>
+        </button>
+        <button class="row row-tap" id="btnReset" data-page-node-id="lZ5XrvqVmYxEhzWeb4CYIs">
+          <span data-page-node-id="gMcY9HDBmwhkzC03yxzHwI">清空掌握记录</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" data-page-node-id="pUvUbzLhPFwy0cXxPfZEGa"><path d="M9 18l6-6-6-6" data-page-node-id="EAXCCPHDmwKJeeDCPZx7Yu"/></svg>
+        </button>
+      </div>
+
+      <div class="install-tip" id="installTip" hidden data-page-node-id="ZJ7voZbaeCIJyKNoCUb7lt"></div>
+
+      <p class="foot-note" data-page-node-id="QuG3npGCex6yXA1MXEVcmH">题库覆盖数学（2008–2025 年，377 题）、政治（2010–2024 年，570 题）与英语二（2018 年起）全部试题。<br data-page-node-id="rG6HcXEMXYnvmEwjqdbrnc">如发现某题与原卷不符，以原卷为准。</p>
+    </section>
+
+  </main>
+
+  <!-- ============ 底部导航 ============ -->
+  <nav class="tabbar" id="tabbar" data-page-node-id="XttCu9p7LH0bhxTpa051oi">
+    <button class="tab on" data-tab="tiku" data-page-node-id="B7D0K8PJe5v08WuO1GLr7R">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="VXdzcmWOZ9D2nZvcTapuuW"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10v16H5.5A1.5 1.5 0 0 1 4 18.5z" data-page-node-id="D3S36pI7PtwLxsVCUP99Ss"/><path d="M14 4h4.5A1.5 1.5 0 0 1 20 5.5v13A1.5 1.5 0 0 1 18.5 20H14z" data-page-node-id="PIKgsJCCdAcNXNgBB71xNC"/></svg>
+      <span data-page-node-id="cSMMmbTAQOSGYkPzEmHqMB">题库</span>
+    </button>
+    <button class="tab" data-tab="type" data-page-node-id="USsGOegE1NZLhFGklWT0LK">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="KGd5AsVgYbps54QfcCJW1H"><rect x="3" y="3" width="7.5" height="7.5" rx="1.6" data-page-node-id="KURgWcIGSrKVNYfZTfimkd"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6" data-page-node-id="ny2sfn59GxgsjEwDVCBxoY"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6" data-page-node-id="8YNDLVgsd6xvKS9jKZQwoW"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6" data-page-node-id="o1JFCIumhdjnv9zJbNhXDe"/></svg>
+      <span data-page-node-id="AxtLg1WSSwDchBoVCjO4Ad">题型</span>
+    </button>
+    <button class="tab" data-tab="formula" data-page-node-id="eq0IpF4qczOAe7cNgwYbQk">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="GN59iMh9q8m3f5R4qyRkNx"><path d="M9 4l-4 8 4 8" data-page-node-id="XpDy0QXfrqeqC44mX7pOLQ"/><path d="M15 4l4 8-4 8" data-page-node-id="WlThGLk5VnWssF49jjTbi8"/></svg>
+      <span data-page-node-id="qElq2G3eFEkUaOf4R9sJMz">公式</span>
+    </button>
+    <button class="tab" data-tab="map" data-page-node-id="4NvVGlP4FELTTCn2TMdVm0">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="TGtKzdQ4TUkmNBFJqECkSp"><rect x="3" y="4" width="18" height="16" rx="2" data-page-node-id="3rQsqGeRQRZaKn4SLN7btl"/><path d="M3 9h18M9 9v11" data-page-node-id="1UlrXFlk2EqpDmFZEZZTgl"/></svg>
+      <span data-page-node-id="kxrVsdvt8EoTKTIAHCO8hF">规律</span>
+    </button>
+    <button class="tab" data-tab="solver">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2.2"/><path d="M8 7.2h8M8 11.2h2.2M13.8 11.2H16M8 15.2h2.2M13.8 15.2H16"/></svg>
+      <span>解题</span>
+    </button>
+    <button class="tab" data-tab="me" data-page-node-id="4tB8hBfKxCZrwWpvz0ZGS1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="7H1GICB6ZUukaCkIbkzEin"><circle cx="12" cy="8" r="3.6" data-page-node-id="ujna4Pq5bSHkz44VGP7R2H"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" data-page-node-id="SEhmLrh4BbUHhP0c2g8WQ0"/></svg>
+      <span data-page-node-id="s0nCkUvTcIvQH3XjwrfpcL">我的</span>
+    </button>
+  </nav>
+
+  <!-- ============ 题目详情 ============ -->
+  <div id="detail" class="detail" aria-hidden="true" data-page-node-id="JAkfExwjzJgwSDXyXZqwkY">
+    <header class="dbar" data-page-node-id="oBWMF0tra28D71wQRZsS0a">
+      <button id="dBack" class="dback" aria-label="返回" data-page-node-id="e09D9VW1HT1n9fUNCDAwfC">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="9VFGQPrywLZkWpFMcA5Qjq"><path d="M15 18l-6-6 6-6" data-page-node-id="Z13OrwjX3rDLYNkSGsTLwC"/></svg>
+      </button>
+      <span id="dNo" class="dno" data-page-node-id="wV0nwi4xfrzY2F7NFCgsR6">—</span>
+      <button id="dMark" class="dmark" aria-label="标记已掌握" data-page-node-id="csHPsPIFIYTY0r84sRv1UD">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="OKrBdiTi7vhDWERgT3iN09"><path d="M4.5 12.5l5 5 10-11" data-page-node-id="UcuVDKUKFh9DZLs93lQCyM"/></svg>
+      </button>
+    </header>
+    <div class="dscroll" id="dScroll" data-page-node-id="omTaea7is77NQEz4qiubDA">
+      <div id="dContent" class="dcontent" data-page-node-id="GW6kOMjaD9mC1sdizKHNAB"></div>
+      <div class="dnave" id="dNav" data-page-node-id="pqAHHAfMZPVLvEcT4bFWEK"></div>
+    </div>
+  </div>
+
+  <!-- ============ 整卷模式 ============ -->
+  <div id="paper" class="detail paper-view" aria-hidden="true" data-page-node-id="cpijGLPgWfUC0VbMxHJFxh">
+    <header class="dbar" data-page-node-id="zAODgkJ2F0uNIFBbG6YB6J">
+      <button id="pBack" class="dback" aria-label="返回" data-page-node-id="YUWjeWIYcVRCyXCbnMXYYd">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="r2d7KGwCbsIGirA3uj9OBU"><path d="M15 18l-6-6 6-6" data-page-node-id="wBKbPf3jCsXmCQsFTZE6Db"/></svg>
+      </button>
+      <span id="pTitle" class="dno" data-page-node-id="0BBkFp7DG1UF47aOEJhCjE">整卷</span>
+      <button id="pAll" class="pall" aria-label="展开全部" data-page-node-id="NXnvkPd20HMELz6Jqqud2Q">全展开</button>
+    </header>
+    <div class="dscroll" id="pScroll" data-page-node-id="bQZHdVWP3PMaVTAAAcubSE">
+      <div id="pBody" class="pbody" data-page-node-id="98erjZys59VZC58Z83Esjb"></div>
+    </div>
+  </div>
+
+  <!-- ============ 词卡 ============ -->
+  <div id="wSheet" class="wsheet" aria-hidden="true">
+    <div class="ws-mask"></div>
+    <div class="ws-card">
+      <div class="ws-bar"></div>
+      <div class="ws-head">
+        <div class="ws-tit"><b id="wsWord">word</b><span id="wsPhon"></span></div>
+        <button id="wsClose" class="ws-close" aria-label="关闭">×</button>
+      </div>
+      <div id="wsBody" class="ws-body"></div>
+      <div class="ws-foot"><button id="wsAdd" class="ws-add">＋ 生词本</button></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']],
+    processEscapes: true
+  },
+  svg: { fontCache: 'global', scale: 1.02 },
+  options: { enableMenu: false, skipHtmlTags: ['script','noscript','style','textarea','pre','code'] },
+  startup: { typeset: false }
+};
+</script>
+<script src="vendor/mathjax-tex-svg.js"></script>
+<script src="bg.js"></script>
+<script src="web.js"></script>
+<script src="brand.js"></script>
+<script src="app.js"></script>
+<script src="vendor/math.js"></script>
+<script src="vendor/nerdamer.js"></script>
+<script src="solver-core.js"></script>
+<script src="vendor/tesseract/tesseract.min.js"></script>
+<script src="ocr.js"></script>
+<script src="choice-parse.js"></script>
+<script src="problem-parse.js"></script>
+<script src="solver-kb.js"></script>
+<script src="solver.js"></script>
+<script src="tiku.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js' + (location.search || '')).catch(function () {});
+  });
+}
+</script>
+</body>
+</html>
+
+
+
+
