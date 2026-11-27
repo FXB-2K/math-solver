@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    符号键盘样式（解题页）
    ============================================================ */
 .ms-kb {
@@ -78,3 +78,20 @@
   .ms-kb-row button { min-width: 34px; height: 32px; font-size: 14px; }
   .ms-kb-row button.wide { min-width: 50px; font-size: 11.5px; }
 }
+
+/* 符号键盘可折叠 */
+.ms-kb-head { cursor: pointer; user-select: none; }
+.ms-kb-head::before {
+  content: '';
+  display: inline-block;
+  width: 0; height: 0;
+  border-left: 4px solid currentColor;
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid transparent;
+  margin-right: 6px;
+  transform: rotate(90deg);
+  transition: transform .16s;
+  opacity: .6;
+}
+.ms-kb.kb-collapsed .ms-kb-head::before { transform: rotate(0deg); }
+.ms-kb.kb-collapsed .ms-kb-body { display: none; }

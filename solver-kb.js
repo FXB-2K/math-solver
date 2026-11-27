@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    解题页：符号键盘 + 输入识别提示
    插入到 #msInput 下方，点按即插入到光标处
    ============================================================ */
@@ -64,7 +64,7 @@
     var wrap = document.createElement('div');
     wrap.className = 'ms-kb';
     wrap.innerHTML =
-      '<div class="ms-kb-head">' +
+      '<div class="ms-kb-head" data-toggle="1">' +
         '<div class="ms-kb-tabs" id="msKbTabs"></div>' +
         '<b>点符号插入到光标处</b>' +
       '</div>' +
@@ -126,7 +126,18 @@
     }
 
     drawBody();
+
+    // 点击标题折叠/展开符号键盘（默认折叠，省空间）
+    var headEl = wrap.querySelector('.ms-kb-head');
+    if (headEl) {
+      headEl.addEventListener('click', function (e) {
+        if (e.target && e.target.tagName === 'BUTTON') return;
+        wrap.classList.toggle('kb-collapsed');
+      });
+    }
+    wrap.classList.add('kb-collapsed');
   }
 
   window.MathSolverKb = { build: build };
 })();
+

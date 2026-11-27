@@ -129,14 +129,16 @@
 
     ensureField();
 
-    // 在文本域上方插入「专业 / 文本」切换
+    // 「专业公式 / 纯文本」切换：插在数学输入框上方
     var sw = document.createElement('div');
     sw.className = 'ms-inmode-switch';
     sw.id = 'msInModeSwitch';
     sw.innerHTML =
       '<button type="button" class="on" data-inmode="math">专业公式</button>' +
       '<button type="button" data-inmode="text">纯文本</button>';
-    ta.parentNode.insertBefore(sw, ta);
+    var mw = document.querySelector('.ms-mathwrap');
+    if (mw && mw.parentNode) mw.parentNode.insertBefore(sw, mw);
+    else ta.parentNode.insertBefore(sw, ta);
 
     Array.prototype.forEach.call(sw.querySelectorAll('button'), function (b) {
       b.addEventListener('click', function () {
