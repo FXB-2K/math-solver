@@ -10,7 +10,7 @@ function withSC(u) {
   return u + (u.indexOf('?') >= 0 ? '&' : '?') + 'sharecode=' + encodeURIComponent(SC);
 }
 
-const CACHE = 'math2-cf-11271653';
+const CACHE = 'math2-v3.80.0';
 const ASSETS = [
   './',
   './index.html',
@@ -38,6 +38,12 @@ const ASSETS = [
   './vendor/nerdamer.js',
   './vendor/math.js',
   './solver-core.js',
+  './vendor/mathlive/mathlive-static.css',
+  './vendor/mathlive/mathlive-fonts.css',
+  './vendor/mathlive/mathlive.min.js',
+  './math-input.css',
+  './math-input.js',
+  './latex2cas.js',
   './problem-parse.js',
   './ocr.css',
   './ocr-proof.css',
@@ -130,6 +136,7 @@ self.addEventListener('fetch', e => {
 
   e.respondWith(cacheFirst(req));
 });
+
 
 
 
