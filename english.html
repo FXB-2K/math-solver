@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark" data-ramp="blue">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>英语词库 · Oxford 3000 语义桥梁</title>
+<link rel="stylesheet" href="english.css">
+<script src="deploy-mode.js"></script>
+<script src="clean-url.js"></script>
+</head>
+<body>
+<div class="en-bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="en-grain" aria-hidden="true"></div>
+
+<header class="en-top">
+  <a class="en-brand" href="home.html">
+    <span class="en-logo">语</span>
+    <span class="en-brand-t"><b>数二真题全解</b><span>英语词库 · Oxford 3000</span></span>
+  </a>
+  <nav class="en-nav">
+    <a href="index.html?app=1">题库</a>
+    <a class="on" href="english.html">英语词库</a>
+    <button id="enTheme" class="en-theme" type="button" aria-label="切换深浅色">◐</button>
+  </nav>
+</header>
+
+<main class="en-main">
+  <section class="en-hero">
+    <div class="en-eyebrow"><i></i>Oxford 3000 · 语义桥梁词库</div>
+    <h1>每个词，<span>都有一条来路</span></h1>
+    <p>Oxford 3000 全库已汇入：<b>2975 词</b>，其中 84 个已写好「核心义 / 语义桥梁 / 故事 / 同根词 / 搭配 / 置信度」，其余先给音标和中文释义，故事会继续补。</p>
+    <div class="en-stats">
+      <div class="en-stat"><b id="stWords">—</b><span>全库词条</span></div>
+      <div class="en-stat"><b id="stDone">—</b><span>已写故事</span></div>
+      <div class="en-stat"><b id="stTodo">—</b><span>待补故事</span></div>
+      <div class="en-stat"><b id="stKnown">0</b><span>已掌握</span></div>
+    </div>
+    <div class="en-progress"><span id="enBar"></span></div>
+  </section>
+
+  <section class="en-toolbar">
+    <div class="en-search">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="enQ" type="search" placeholder="搜单词 / 核心义 / 搭配…" autocomplete="off">
+    </div>
+    <div class="en-chips" id="enChips"></div>
+    <div class="en-count" id="enCount">—</div>
+  </section>
+
+  <section class="en-grid" id="enGrid" aria-live="polite"></section>
+  <button id="enMore" class="en-more" type="button" hidden>加载更多 ↓</button>
+
+  <section class="en-empty" id="enEmpty" hidden>
+    <b>没有匹配的词</b>
+    <span>换个关键词，或点“全部”看看。</span>
+  </section>
+
+  <footer class="en-foot">
+    <p>词源依据 Wiktionary 英文词源，Etymonline 交叉核对；标“中高/中”的词源存在学界讨论，故事里已说明。低置信度不编故事。</p>
+    <p><a href="index.html?app=1">← 回题库</a> · <a href="https://en.wiktionary.org/" target="_blank" rel="noopener">Wiktionary</a> · <a href="https://www.etymonline.com/" target="_blank" rel="noopener">Etymonline</a></p>
+  </footer>
+</main>
+
+<div class="en-modal" id="enModal" hidden>
+  <div class="en-modal-mask" data-close></div>
+  <article class="en-modal-card" role="dialog" aria-modal="true" aria-labelledby="mWord">
+    <button class="en-close" type="button" aria-label="关闭" data-close>×</button>
+    <div class="en-m-top">
+      <h2 id="mWord">—</h2>
+      <span id="mPhone" class="en-mphone"></span>
+      <div class="en-m-badges"><span id="mConf" class="en-badge"></span><span id="mTags" class="en-tags"></span></div>
+    </div>
+    <div class="en-m-block"><span class="en-m-label">核心义</span><p id="mCore"></p></div>
+    <div class="en-m-block bridge"><span class="en-m-label">语义桥梁</span><p id="mBridge"></p></div>
+    <div class="en-m-block"><span class="en-m-label">故事</span><p id="mStory" class="en-story"></p></div>
+    <div class="en-m-cols">
+      <div class="en-m-block"><span class="en-m-label">同根词</span><div id="mCog" class="en-mini-tags"></div></div>
+      <div class="en-m-block"><span class="en-m-label">常见搭配</span><div id="mCol" class="en-mini-tags"></div></div>
+    </div>
+    <div class="en-m-foot">
+      <button id="mKnown" class="en-btn" type="button">标记为已掌握</button>
+      <div class="en-m-nav">
+        <button id="mPrev" class="en-btn ghost" type="button">← 上一个</button>
+        <button id="mNext" class="en-btn ghost" type="button">下一个 →</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<script src="english.js"></script>
+</body>
+</html>
+
